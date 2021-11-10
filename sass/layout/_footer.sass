@@ -1,0 +1,31 @@
+#about
+    background: $black;
+    margin-top: 3rem;
+    height: auto;
+    h2
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding: 1rem;
+        &::after
+            content: "";
+            display: flex;
+            width: 62%;
+            height: .1rem;
+            background: $wow;
+            position: relative;
+            top: 0;
+            left: 0;
+    article
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+.about-1
+    grid-area: 1 / 1 / 4 / 13;
+.about-2
+    grid-area: 4 / 1 / 7 / 13;
+.about-3
+    grid-area: 7 / 1 / 10 / 13;
+.about-4
+    grid-area: 10 / 1 / 13 / 13; 

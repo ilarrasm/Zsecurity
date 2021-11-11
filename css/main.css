@@ -45,58 +45,59 @@
 .service-rig {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   background-image: url("../media/service/rig.webp");
-  background-size: auto;
+  background-size: 100%;
   background-attachment: fill;
-  background-position: 30% 16%;
-  width: 100%;
   background-repeat: no-repeat;
-  height: 50vh; }
+  background-position: 50% 60%; }
   .service-rig p {
-    color: #090b09;
-    background: #366be7; }
+    display: flex;
+    color: #1f1f1f;
+    width: 80%;
+    align-self: center; }
 
 .service-rental {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   background-image: url("../media/service/rental.webp");
-  background-size: auto;
+  background-size: 100%;
   background-attachment: fill;
-  background-position: 30% 16%;
-  width: 100%;
   background-repeat: no-repeat;
-  height: 50vh; }
+  background-position: 50% 60%; }
   .service-rental p {
-    color: #090b09;
-    background: #366be7; }
+    display: flex;
+    color: #1f1f1f;
+    width: 80%;
+    align-self: center; }
 
 .service-housing {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   background-image: url("../media/service/housing.webp");
-  background-size: auto;
+  background-size: 100%;
   background-attachment: fill;
-  background-position: 30% 16%;
-  width: 100%;
   background-repeat: no-repeat;
-  height: 50vh; }
+  background-position: 50% 60%; }
   .service-housing p {
-    color: #090b09;
-    background: #366be7; }
+    display: flex;
+    color: #1f1f1f;
+    width: 80%;
+    align-self: center; }
 
 .about-1 {
   padding: 3rem; }
   .about-1 h3 {
-    color: #090b09;
-    background: rradial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
+    color: #1f1f1f;
+    background: radial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
     font-weight: 700;
     width: 100%;
     font-size: 2em;
-    text-align: center;
-    justify-content: center;
     filter: drop-shadow(5px 1px 30px rgba(255, 255, 255, 0.4));
     border-radius: 5%; }
   .about-1 p {
@@ -108,13 +109,11 @@
 .about-2 {
   padding: 3rem; }
   .about-2 h3 {
-    color: #090b09;
-    background: rradial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
+    color: #1f1f1f;
+    background: radial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
     font-weight: 700;
     width: 100%;
     font-size: 2em;
-    text-align: center;
-    justify-content: center;
     filter: drop-shadow(5px 1px 30px rgba(255, 255, 255, 0.4));
     border-radius: 5%; }
   .about-2 p {
@@ -126,13 +125,11 @@
 .about-3 {
   padding: 3rem; }
   .about-3 h3 {
-    color: #090b09;
-    background: rradial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
+    color: #1f1f1f;
+    background: radial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
     font-weight: 700;
     width: 100%;
     font-size: 2em;
-    text-align: center;
-    justify-content: center;
     filter: drop-shadow(5px 1px 30px rgba(255, 255, 255, 0.4));
     border-radius: 5%; }
   .about-3 p {
@@ -144,13 +141,11 @@
 .about-4 {
   padding: 3rem; }
   .about-4 h3 {
-    color: #090b09;
-    background: rradial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
+    color: #1f1f1f;
+    background: radial-gradient(circle, #e9e0ff 50%, rgba(233, 224, 255, 0.6) 87%, rgba(233, 224, 255, 0) 100%);
     font-weight: 700;
     width: 100%;
     font-size: 2em;
-    text-align: center;
-    justify-content: center;
     filter: drop-shadow(5px 1px 30px rgba(255, 255, 255, 0.4));
     border-radius: 5%; }
   .about-4 p {
@@ -194,7 +189,8 @@ h1, h2, h3, h4 {
   font-size: 3em;
   color: #e9e0fb;
   align-items: center;
-  margin-top: 3rem; }
+  margin-top: 10%;
+  position: relative; }
 
 .tituloH3Crypto {
   font-size: 2.3em; }
@@ -213,15 +209,17 @@ h1, h2, h3, h4 {
   font-size: 3em;
   color: #e9e0fb;
   align-self: center;
-  height: 3rem; }
+  height: 3rem;
+  margin-left: 2rem; }
 
 .tituloH3 {
-  text-align: center;
-  width: 50%;
-  font-size: 2em;
-  color: #090b09;
-  padding: 1rem;
-  background: radial-gradient(circle at 50% 50%, rgba(42, 246, 250, 0.7), rgba(42, 246, 250, 0.1)); }
+  display: flex;
+  width: 100%;
+  font-size: 4vh;
+  color: #1f1f1f;
+  justify-content: flex-end;
+  align-self: center;
+  font-weight: 900; }
 
 .header__nav {
   align-self: center;
@@ -245,11 +243,21 @@ h1, h2, h3, h4 {
     width: auto;
     user-select: none;
     clip-path: circle(38% at 50% 50%);
-    opacity: .92; }
+    opacity: .92;
+    position: fixed;
+    top: 0;
+    left: 0; }
+
+.infoCrypto {
+  display: flex;
+  flex-direction: column;
+  color: #e9e0fb; }
 
 #about {
-  background: #090b09;
-  height: auto; }
+  position: relative;
+  background: #1f1f1f;
+  height: 100vmax;
+  z-index: 1; }
   #about h2 {
     display: flex;
     flex-direction: column;
@@ -271,7 +279,7 @@ h1, h2, h3, h4 {
   grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-rows: 15% 30% 35% 20%;
   width: 100%;
-  height: 100vh; }
+  height: 80vh; }
 
 .header__nav {
   grid-area: 1 / 3 / 2 / 5; }
@@ -289,8 +297,12 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px; }
+  background: #1f1f1f;
+  height: 70vmax;
+  z-index: 1; }
+  .crypto img {
+    width: 25%;
+    height: auto; }
 
 .tituloH2Crypto {
   grid-area: 1 / 2 / 3 / 12; }
@@ -329,10 +341,57 @@ h1, h2, h3, h4 {
 .icon-litecoin {
   grid-area: 2 / 2 / 3 / 3; }
 
-#about article {
+.service {
+  background: #1f1f1f;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr); }
+  grid-template-columns: 5% repeat(6, 1fr) 5%;
+  grid-template-rows: repeat(8, 1fr);
+  width: auto;
+  height: 80vh;
+  z-index: 1;
+  grid-gap: 5px; }
+
+.service-rig {
+  grid-area: 3 / 2 / 6 / 5; }
+
+.service-housing {
+  grid-area: 1 / 2 / 3 / 8; }
+
+.service-rental {
+  grid-area: 6 / 2 / 9 / 5; }
+
+.service-contact {
+  grid-area: 3 / 5 / 9 / 8;
+  background: #e9e0fb;
+  display: flex;
+  flex-direction: column; }
+  .service-contact::before {
+    content: "";
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 5%;
+    background-color: #69046c; }
+  .service-contact::after {
+    content: "";
+    display: flex;
+    position: relative;
+    top: -20%;
+    left: 0;
+    width: 5%;
+    height: 50%;
+    background-color: #69046c; }
+  .service-contact h2 {
+    color: #1f1f1f; }
+
+#about {
+  z-index: 1; }
+  #about article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr); }
 
 .about-1 {
   grid-area: 1 / 1 / 4 / 13; }
@@ -387,6 +446,11 @@ h1, h2, h3, h4 {
   grid-area: 11 / 8 / 13 / 13;
   background: #69046c; }
 
+.button-service {
+  padding: 1rem;
+  margin-left: 2rem;
+  background: #366be7; }
+
 .elements-light-l {
   position: relative;
   height: 100%; }
@@ -436,9 +500,9 @@ h1, h2, h3, h4 {
     width: 80%;
     height: .1rem;
     background: linear-gradient(180deg, #2af6fa 0%, rgba(57, 100, 148, 0.1) 100%);
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    bottom: -40%;
+    left: 10%;
     filter: drop-shadow(0px 0px 10px);
     align-self: center; }
 
@@ -477,14 +541,17 @@ h1, h2, h3, h4 {
   .header-index::after {
     content: "";
     width: 100%;
-    height: 3%;
-    background: linear-gradient(180deg, rgba(9, 11, 9, 0) 0%, rgba(9, 11, 9, 0.9) 100%);
+    height: 5%;
+    background: linear-gradient(180deg, rgba(31, 31, 31, 0) 0%, rgba(31, 31, 31, 0.9) 100%);
     position: absolute;
-    bottom: 0%;
+    bottom: 20%;
     right: 0%; }
 
 .intro {
-  z-index: 1; }
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  z-index: 0; }
   .intro__section p {
     width: 60%; }
 
@@ -496,16 +563,7 @@ h1, h2, h3, h4 {
   z-index: 0; }
 
 .header__nav {
-  z-index: 1; }
-
-.crypto {
-  height: 100vh;
-  background: #090b09; }
-  .crypto img {
-    width: 25%;
-    height: auto; }
-
-.service {
-  height: auto;
-  width: auto;
-  background: #090b09; }
+  z-index: 0;
+  position: fixed;
+  top: 5%;
+  right: 0; }

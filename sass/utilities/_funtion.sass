@@ -16,22 +16,23 @@ $crypto-icon: bitcoin, ethereum, litecoin, monero
      background-repeat: no-repeat;
      background-position: 50% 100%;
 ///BUCLE PARA SERVICE-INDEX -CATEGORIAS
-$service: rig rental housing;
+$service: rig rental housing
 @each $i in $service
     .service-#{$i}
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: flex-start;
         background-image: url('../media/service/#{$i}.webp');
-        background-size: auto; 
+        background-size: 100%; 
         background-attachment: fill;
-        background-position: 30% 16%;
-        width: 100%;
-        background-repeat: no-repeat
-        height: 50vh;
+        background-repeat: no-repeat;
+        background-position: 50% 60%;
         p
+            display: flex;
             color: $black;
-            background: $blue; 
+            width: 80%;
+            align-self: center;
 
 //ABOUT-GRID    
 @for $i from 1 through 4
@@ -43,8 +44,6 @@ $service: rig rental housing;
          font-weight: 700;
          width: 100%;
          font-size: 2em;
-         text-align: center;
-         justify-content: center;
          filter: drop-shadow(5px 1px 30px rgba(255, 255, 255, .4 ));
          border-radius: 5%;
      p

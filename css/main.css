@@ -122,6 +122,30 @@
     margin-top: 2%;
     margin-bottom: 5%; }
 
+.icon-bitcoin {
+  background: url(../media/ico/bitcoin.svg);
+  width: 64px;
+  height: 65px;
+  background-repeat: no-repeat; }
+
+.icon-ethereum {
+  background: url(../media/ico/ethereum.svg);
+  width: 64px;
+  height: 65px;
+  background-repeat: no-repeat; }
+
+.icon-cardano {
+  background: url(../media/ico/cardano.svg);
+  width: 64px;
+  height: 65px;
+  background-repeat: no-repeat; }
+
+.icon-monero {
+  background: url(../media/ico/monero.svg);
+  width: 64px;
+  height: 65px;
+  background-repeat: no-repeat; }
+
 * {
   padding: 0;
   margin: 0;
@@ -261,12 +285,22 @@ h1, h2, h3, h4 {
   width: 100%;
   height: 100vh; }
 
-.container-grid {
+.grid-icons {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(50%);
-  grid-column-gap: 0;
-  grid-row-gap: 0; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr); }
+
+.icon-bitcoin {
+  grid-area: 1 / 1 / 2 /2; }
+
+.icon-ethereum {
+  grid-area: 1 / 2 / 2 / 3; }
+
+.icon-cardano {
+  grid-area: 2 / 1 / 3 / 2; }
+
+.icon-monero {
+  grid-area: 2 / 2 / 3 / 3; }
 
 .value-crypto {
   grid-area: 3 / 2 / 4 / 4;

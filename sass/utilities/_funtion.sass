@@ -44,4 +44,10 @@ $service: rig rental housing;
          width: 100%;
          margin-top: 2%;
          margin-bottom: 5%;
-    
+$crypto-icon: bitcoin, ethereum, cardano, monero
+@each $name in $crypto-icon
+ .icon-#{$name}
+     background: url(../media/ico/#{$name}.svg)
+     width: 64px;
+     height: 65px;
+     background-repeat: no-repeat;

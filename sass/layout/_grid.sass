@@ -4,12 +4,19 @@
         grid-template-rows: 15% 30% 35% 20%; 
         width: 100%;
         height: 100vh;
-.container-grid
+//Grid de iconos        
+.grid-icons
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(50%);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+.icon-bitcoin
+    grid-area: 1 / 1 / 2 /2;
+.icon-ethereum
+    grid-area: 1 / 2 / 2 / 3;
+.icon-cardano 
+    grid-area: 2 / 1 / 3 / 2;
+.icon-monero
+    grid-area: 2 / 2 / 3 / 3; 
 //GRID PARA HEADER DEL INDEX panel de valores
 .value-crypto
  grid-area: 3 / 2 / 4 / 4;

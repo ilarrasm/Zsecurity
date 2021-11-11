@@ -2,18 +2,11 @@
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
 
-<<<<<<< HEAD
-=======
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
->>>>>>> a99c9db7fa124159c132831369ac391f6bba46f7
 
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('particles.js loaded - callback');
 });
-<<<<<<< HEAD
 
-=======
->>>>>>> a99c9db7fa124159c132831369ac391f6bba46f7
 
 /* Otherwise just put the config content (json): */
 particlesJS('particles-js',

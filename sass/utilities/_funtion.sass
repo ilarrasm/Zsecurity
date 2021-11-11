@@ -1,3 +1,4 @@
+//fLEX CLASS
 .flex-row
     display: flex;
     flex-direction: row;
@@ -5,10 +6,16 @@
 .flex-column
     display: flex;
     flex-direction: column;
-
-@mixin flex-row()
-    display: flex;
-    flex-direction: row; 
+////CRYPTO EACH CON MAPS PARA LOS ICONOS
+$crypto-icon: bitcoin, ethereum, litecoin, monero
+@each $name in $crypto-icon
+ .icon-#{$name}
+     background: url(../media/ico/#{$name}.svg)
+     width: 75px;
+     height: 75px;
+     background-repeat: no-repeat;
+     background-position: 50% 100%;
+///BUCLE PARA SERVICE-INDEX -CATEGORIAS
 $service: rig rental housing;
 @each $i in $service
     .service-#{$i}
@@ -18,14 +25,15 @@ $service: rig rental housing;
         background-image: url('../media/service/#{$i}.webp');
         background-size: auto; 
         background-attachment: fill;
-        background-position: 30% 70%;
+        background-position: 30% 16%;
         width: 100%;
         background-repeat: no-repeat
-        height: 30vh;
+        height: 50vh;
         p
-            color: $white; 
+            color: $black;
+            background: $blue; 
 
-//About-grid    
+//ABOUT-GRID    
 @for $i from 1 through 4
     .about-#{$i}
      padding: 3rem;
@@ -44,11 +52,3 @@ $service: rig rental housing;
          width: 100%;
          margin-top: 2%;
          margin-bottom: 5%;
-$crypto-icon: bitcoin, ethereum, litecoin, monero
-@each $name in $crypto-icon
- .icon-#{$name}
-     background: url(../media/ico/#{$name}.svg)
-     width: 75px;
-     height: 75px;
-     background-repeat: no-repeat;
-     background-position: 50% 100%;

@@ -8,19 +8,9 @@
         position: absolute;
         width: 3px;
         height: 80vh;
-        background: $blueGradientO;
-        filter: drop-shadow(0px 0px 5px $blue);
+        background: $wow;
+        filter: drop-shadow(0px 0px 1px $blue);
         top: 80%;
-        left: 30%;
-    &::after
-        content: "";
-        display: flex;
-        position: absolute;
-        width: 3px;
-        height: 50vh;
-        background: $blueGradientO;
-        filter: drop-shadow(0px 0px 5px $blue); 
-        top: 100%;
         left: 30%;
 .elements-light-r
     position: relative;
@@ -31,21 +21,11 @@
         position: absolute;
         width: 3px;
         height: 80vh;
-        background: $blueGradientO;
-        filter: drop-shadow(0px 0px 5px $blue);
+        background: $wow;
+        filter: drop-shadow(0px 0px 1px $blue);
         top: 80%;
         left: 30%;
-    &::after
-        content: "";
-        display: flex;
-        position: absolute;
-        width: 3px;
-        height: 50vh;
-        background: $blueGradientO; 
-        filter: drop-shadow(0px 0px 5px $blue); 
-        top: 100%;
-        left: 30%;
-///import css-variables from .light-tron
+///ELEMENTOS HORIZONTALES
 .light-tron
     color: $white;
     &::after
@@ -73,25 +53,25 @@
         align-self: center;
 .light-tron-select
     color: $white;
-    &::after
+    &::before /////////ARRIBA
         content: "";
         display: flex;
-        width: 90%;
+        width: 40%;
         height: .1rem;
         background: $wow;
         position: relative;
-        top: 0%;
-        left: 0;
-        filter: drop-shadow(0px 0px 7px);
-    &::before
+        top: 73%;
+        left: 5%;
+        filter: drop-shadow(0px 0px 2px $white);
+        border-radius: 50% 50% 50% 50%;
+    &::after         //////ABAJO
         content: "";
         display: flex;
-        width: 70%;
+        width: 80%;
         height: .1rem;
         background: $wow;
         position: relative;
-        top: 0%;
-        left: 10%;
-        filter: drop-shadow(0px 0px 10px);
-        opacity: .9;
-        transform: rotateY('180deg');
+        top: 78%;
+        left: 5%;
+        filter: drop-shadow(0px 0px 6px $white);
+        border-radius: 50% 50% 50% 50%;

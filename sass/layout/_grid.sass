@@ -1,35 +1,49 @@
+//HEADER INDEX GRID
 .header-index
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr 1fr;
-        grid-template-rows: 15% 30% 35% 20%; 
-        width: 100%;
-        height: 100vh;
-//grid crypto
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 15% 30% 35% 20%; 
+    width: 100%;
+    height: 100vh;
+///ELEMENTOS-GRID!!!!!!!!!!!
+.header__nav
+    grid-area: 1 / 3 / 2 / 5;
+#particles-js
+    grid-area: 2 / 1 / 5 / 2;
+.header__logo
+    grid-area: 1 / 1 / 2 / 2; 
+.intro
+    grid-area: 2 / 2 / 4 / 5; 
+///////////////////
+//grid crypto-INDEX!!!!!!!!!!!
 .crypto
  display: grid;
  grid-template-columns: repeat(12, 1fr);
  grid-template-rows: repeat(12, 1fr);
  grid-column-gap: 0px;
  grid-row-gap: 0px; 
+ ///ELEMENTOS GRID
 .tituloH2Crypto
     grid-area: 1 / 2 / 3 / 12; 
 .tituloH3Crypto
     grid-area: 6 / 2 / 7 / 12;
 .elementCrypto
-     grid-area: 3 / 1 / 13 / 2; 
+     grid-area: 10 / 1 / 13 / 12; 
 .subCrypto 
      grid-area: 3 / 2 / 5 / 12; 
 .grid-icons 
      grid-area: 7 / 2 / 13 / 3; 
 .infoCrypto 
      grid-area: 7 / 4 / 11 / 12; 
-//Grid de iconos        
+/////////////////////
+//GRID DE CRYPTO ICONOS        
 .grid-icons
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-self: flex-start;
     grid-gap: 2rem;
+////distribucion de grid
 .icon-bitcoin
     grid-area: 1 / 1 / 2 /2;
 .icon-ethereum
@@ -37,7 +51,22 @@
 .icon-cardano 
     grid-area: 2 / 1 / 3 / 2;
 .icon-litecoin
-    grid-area: 2 / 2 / 3 / 3; 
+    grid-area: 2 / 2 / 3 / 3;
+//////////////////////////
+//grid FOOTER
+#about
+    article
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+.about-1
+    grid-area: 1 / 1 / 4 / 13;
+.about-2
+    grid-area: 4 / 1 / 7 / 13;
+.about-3
+    grid-area: 7 / 1 / 10 / 13;
+.about-4
+    grid-area: 10 / 1 / 13 / 13; 
 //GRID PARA HEADER DEL INDEX panel de valores
 .value-crypto
  grid-area: 3 / 2 / 4 / 4;
@@ -47,8 +76,8 @@
  grid-column-gap: 0px;
  grid-row-gap: 0px;
  background-color: $white;
-
-
+//////////////////////
+/// Distribucion de grid
 .crypto1  
     grid-area: 1 / 1 / 9 / 6; 
     background: red;
@@ -73,7 +102,4 @@
 .crypto8  
     grid-area: 11 / 8 / 13 / 13;  
     background: $violetM;
-
-
-//grid cripto ethereum ethereumClassic vertcoin infinitecoin startcoin litecoin primerCoin Dash
-
+//////////////////////////////

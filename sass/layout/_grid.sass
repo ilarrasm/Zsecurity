@@ -21,7 +21,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background: $black;
-    height: 70vmax;
     z-index: 1;
     img
         width: 25%
@@ -30,76 +29,75 @@
 .tituloH2Crypto
     grid-area: 1 / 2 / 3 / 12; 
 .tituloH3Crypto
-    grid-area: 6 / 2 / 7 / 12;
-.elementCrypto
-     grid-area: 10 / 1 / 13 / 12; 
+    grid-area: 5 / 4 / 6 / 10;
+    align-self: center;
+    text-align: center;
 .subCrypto 
-     grid-area: 3 / 2 / 5 / 12; 
+    grid-area: 3 / 2 / 5 / 12; 
 .grid-icons 
-     grid-area: 7 / 2 / 13 / 3; 
-.infoCrypto 
-     grid-area: 7 / 4 / 11 / 12; 
+    grid-area: 6 / 1 / 12 / 13;
+.elements-light-l
+    grid-area: 12 / 1 / 13 / 13;
+
 /////////////////////
 //GRID DE CRYPTO ICONOS        
 .grid-icons
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    align-self: flex-start;
-    grid-gap: 2rem;
-////distribucion de grid
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    height: 70vh;
+////////////////////////////S
 .icon-bitcoin
-    grid-area: 1 / 1 / 2 /2;
+    grid-area: 1 / 1 / 2 / 2;
+    background-position: 50% 50%;
 .icon-ethereum
     grid-area: 1 / 2 / 2 / 3;
-.icon-cardano 
+    background-position: 98% 60%;
+    background-size: 70%; 
+.icon-ravencoin
+    grid-area: 1 / 3 / 2 / 4;
+    background-position: 100% 0%;
+.icon-shiba
     grid-area: 2 / 1 / 3 / 2;
-.icon-litecoin
+    background-position: 50% 60%;
+    background-size: 235%; 
+.icon-etc
     grid-area: 2 / 2 / 3 / 3;
-////////////////////////////S
+    background-position: 100% 60%;
+    background-size: 70%; 
+.icon-monero
+    grid-area: 2 / 3 / 3 / 4;
+    background-position: 50% 50%;
+.icon-ergo
+    grid-area: 1 / 4 / 2 / 5;
+    background-position: 50% 50%;
+.icon-lite
+    grid-area: 2 / 4 / 3 / 5;
+    background-position: 50% 50%;
 ////////////////////////////
 /////Grid de service
 .service  
     background: $black;
     display: grid;
-    grid-template-columns: 5% repeat(6, 1fr) 5%;
-    grid-template-rows: repeat(8, 1fr);
-    width: auto;
-    height: 80vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);     
+    height: 100%;
+    width: 100%;
     z-index: 1;
-    grid-gap: 5px;
+    grid-gap: 1px;
+    padding-bottom: 2rem; 
 /////////// distro
-.service-rig   
-    grid-area: 3 / 2 / 6 / 5;
-.service-housing 
-    grid-area: 1 / 2 / 3 / 8;
-.service-rental  
-    grid-area: 6 / 2 / 9 / 5; 
+.grid-1 //SUPORT
+    grid-area: 3 / 1 / 4 / 8;
+.grid-2
+    grid-area: 2 / 1 / 3 / 8;
+.grid-3  //HOUSING
+    grid-area: 1 / 1 / 2 / 8; 
 .service-contact 
-    grid-area: 3 / 5 / 9 / 8;
+    grid-area: 1 / 8 / 4 / 13;
     background: $white;
     display: flex;
     flex-direction: column;
-    &::before
-        content: "";
-        display: flex;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 5%;
-        background-color: $violetM;
-    &::after
-        content: "";
-        display: flex;
-        position: relative;
-        top: -20%;
-        left: 0;
-        width: 5%;
-        height: 50%;
-        background-color: $violetM;
-    h2
-        color: $black;
 //////////////////
 //grid FOOTER
 #about

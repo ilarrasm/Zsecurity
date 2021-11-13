@@ -129,4 +129,3 @@ particlesJS('particles-js',
   }
 
 );
-

@@ -7,33 +7,58 @@
     display: flex;
     flex-direction: column;
 ////CRYPTO EACH CON MAPS PARA LOS ICONOS
-$crypto-icon: bitcoin, ethereum, litecoin, monero
+$crypto-icon: bitcoin, ethereum, ravencoin, shiba, etc, monero, ergo, lite
 @each $name in $crypto-icon
- .icon-#{$name}
-     background: url(../media/ico/#{$name}.svg)
-     width: 75px;
-     height: 75px;
-     background-repeat: no-repeat;
-     background-position: 50% 100%;
+ .icon-#{$name} 
+    display: flex;
+    flex-direction: column-reverse;
+    background: url(../media/ico/#{$name}.svg);
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: 212%;
+    span
+        display: flex;
+        font-size: 2.7em;
+        text-align: left;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        background: $blackRGBA03;
+        user-select: none;
+        transition: .1s ease;   
+    &:hover
+        & > span
+            background: $blackGradientO;
+            color: $wow1;
+            text-shadow: 0px 0px 15px;
+                  
 ///BUCLE PARA SERVICE-INDEX -CATEGORIAS
-$service: rig rental housing
+@for $i from 1 through 3
+    .grid-#{$i}
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 60vh;
+        p
+            grid-area: 2 / 1 / 3 / 7;    
+$service: rig soporte housing
 @each $i in $service
     .service-#{$i}
+        grid-area: 1 / 7 / 3 / 11;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
         background-image: url('../media/service/#{$i}.webp');
-        background-size: 100%; 
-        background-attachment: fill;
+        background-size: 100%;
+        background-position: 100%
         background-repeat: no-repeat;
-        background-position: 50% 60%;
-        p
-            display: flex;
-            color: $black;
-            width: 80%;
-            align-self: center;
-
+        height: 100%;
+        width: 100%;
+      
 //ABOUT-GRID    
 @for $i from 1 through 4
     .about-#{$i}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.18.0.min.js"></script>
+    <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
     <link rel="stylesheet" href="css/particle.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <title>Zod Security | Tecnología en su maxima expresión</title>
@@ -22,6 +25,9 @@
              <h1 class="index-titulo">Tecnologia en su maxima expresion</h1>
             <section class="intro__section"><p class="light-tron" style="width: 100%;"></p>
             </section>
+            <qc-price-ticker-widget mode="custom" top-coins="true" gainers-and-losers="true" bg="#1e1e1e" theme="dark" currency="USD">
+      </qc-price-ticker-widget>
+      <script src="https://quantifycrypto.com/widgets/marquee/js/qc-price-ticker-widget.js"></script>
         </article>
  <!--        <article class="value-crypto">
             <div class="crypto1"></div>
@@ -36,51 +42,47 @@
         <div id="particles-js"></div> 
     </header>
     <main class="main flex-column">
-        <article class="crypto flex-column">
+        <article class="crypto">
             <div  class="elements-light-l"></div>
-            <div  class="elements-light-r"></div>
             <h2 class="light-tron-1 tituloH2Crypto flex-column">Comience a minar cryptos</h2>
             <section class="grid-icons">
-                <div class="icon-bitcoin"></div>
-                <div class="icon-ethereum"></div>
-                <div class="icon-litecoin"></div>
-                <div class="icon-monero"></div>
+                <div class="icon-bitcoin"><span class="light-tron-h">bitcoin</span></div>
+                <div class="icon-ethereum"><span class="light-tron-h">ethereum</span></div>
+                <div class="icon-etc"><span class="light-tron-h">ethereum classic</span></div>
+                <div class="icon-shiba"><span class="light-tron-h">shiba</span></span></div>
+                <div class="icon-monero"><span class="light-tron-h">monero</span></div>
+                <div class="icon-ergo"><span class="light-tron-h">ergo</span></div>
+                <div class="icon-ravencoin"><span class="light-tron-h">ravencoin</span></div>
+                <div class="icon-lite"><span class="light-tron-h">litecoin</span></div>                
             </section>
             <p class="subCrypto">Inverti en el futuro. Ofrecemos las mejores estregias de diferecificacion del mercado. </p>  
             <h3 class="tituloH3Crypto flex-column">Monedas soportadas</h3>
-            <ul class="infoCrypto">
-                <li><span>bitcoin</span></li>
-                <li><span>ethereum</span></li>
-                <li><span>ethereum classic</span></li>
-                <li><span>shiba</span></li>
-                <li><span>monero</span></li>
-                <li><span>ergo</span></li>
-                <li><span>ravencoin</span></li>
-            </ul>
-            <span class="elementCrypto"></span>
         </article>
         <article class="service">
             <section class="service-contact">
                 <h2 class="serviceH2">CONTACTANOS</h2>
                 <form></form>
-                <a class="button-service">CONTACTANOS</a>
+                <a class="button-service">ENVIAR</a>
             </section>
-            <section class="service-rental">
-                <h3 class="tituloH3">Soporte 365</h3>
+            <section class="grid-1">
+                <h3 class="soporte">Soporte 365</h3>
                 <p>
                     Tu rig esta protegido cada dia del año. Nuestro soporte remotodesde nuestro Data Cente incluye 
                     (lista)Monitero contante 
                     control de rendimiento y temperatura
                     Limpieza cuatrimestral de tu rig 
                 </p>
+                <div class="service-soporte"></div>
             </section>
-            <section class="service-rig">
-                <h3 class="tituloH3">Tu rig a medida</h3>
+            <section class="grid-2">
+                <h3 class="rig">Tu rig a medida</h3>
                 <p>Comenza a minar desde el dia 0. Armamos tu equipo de mineria basandonos en tus expectativas y necesidades</p>
+                <div class="service-rig"></div>
             </section>
-            <section class="service-housing">
-                <h3 class="tituloH3">Housing</h3>
+            <section class="grid-3">
+                <h3 class="housing">Housing</h3>
                 <p>Garantizamos el mantenimiento, la seguridad y el maximo rendimiento de tu minero desde Nuestro Data Center preparado para contener cualquier dificultad</p>
+                <div class="service-housing"></div>
             </section>
         </article>
     </main>

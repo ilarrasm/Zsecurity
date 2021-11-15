@@ -29,16 +29,6 @@
       </qc-price-ticker-widget>
       <script src="https://quantifycrypto.com/widgets/marquee/js/qc-price-ticker-widget.js"></script>
         </article>
- <!--        <article class="value-crypto">
-            <div class="crypto1"></div>
-            <div class="crypto2"></div>
-            <div class="crypto3"></div>
-            <div class="crypto4"></div>
-            <div class="crypto5"></div>
-            <div class="crypto6"></div>
-            <div class="crypto7"></div>
-            <div class="crypto8"></div>
-        </article> -->
         <div id="particles-js"></div> 
     </header>
     <main class="main flex-column">
@@ -59,29 +49,28 @@
             <h3 class="tituloH3Crypto flex-column">Monedas soportadas</h3>
         </article>
         <article class="service">
-            <section class="service-contact">
-                <h2 class="serviceH2">CONTACTANOS</h2>
-                <form></form>
-                <a class="button-service">ENVIAR</a>
-            </section>
             <section class="grid-1">
-                <h3 class="soporte">Soporte 365</h3>
-                <p>
-                    Tu rig esta protegido cada dia del año. Nuestro soporte remotodesde nuestro Data Cente incluye 
-                    (lista)Monitero contante 
-                    control de rendimiento y temperatura
-                    Limpieza cuatrimestral de tu rig 
-                </p>
+                <div>
+                    <h3 class="soporte">Soporte 365</h3>
+                    <p>
+                        Tu rig esta protegido cada dia del año. Nuestro soporte remoto desde nuestro Data Center incluye 
+                        Monitero constante del rendimiento y la temperatura. 
+                    </p>
+                </div>
                 <div class="service-soporte"></div>
             </section>
             <section class="grid-2">
+                <div>
                 <h3 class="rig">Tu rig a medida</h3>
                 <p>Comenza a minar desde el dia 0. Armamos tu equipo de mineria basandonos en tus expectativas y necesidades</p>
+                </div>
                 <div class="service-rig"></div>
             </section>
             <section class="grid-3">
-                <h3 class="housing">Housing</h3>
-                <p>Garantizamos el mantenimiento, la seguridad y el maximo rendimiento de tu minero desde Nuestro Data Center preparado para contener cualquier dificultad</p>
+                <div>
+                    <h3 class="housing">Housing</h3>
+                    <p>Garantizamos el mantenimiento, la seguridad y el maximo rendimiento de tu minero desde Nuestro Data Center preparado para contener cualquier dificultad</p>
+                </div>
                 <div class="service-housing"></div>
             </section>
         </article>
@@ -96,19 +85,44 @@
             </section>
             <section class="about-2">
                 <h3>Concluciones instantaneas</h3>
-                <div></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dignissimos nulla? Laborum reprehenderit aspernatur, omnis explicabo porro atque deleniti amet molestiae culpa optio adipisci non, dignissimos consequuntur sapiente repellat voluptatum?</p>
             </section>
             <section class="about-3">
                 <h3>Estadisticas detalladas</h3>
-                <div></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dignissimos nulla? Laborum reprehenderit aspernatur, omnis explicabo porro atque deleniti amet molestiae culpa optio adipisci non, dignissimos consequuntur sapiente repellat voluptatum?</p>
+                
             </section>
             <section class="about-4">
                 <h3>Distribución Electrica</h3>
-                <div></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dignissimos nulla? Laborum reprehenderit aspernatur, omnis explicabo porro atque deleniti amet molestiae culpa optio adipisci non, dignissimos consequuntur sapiente repellat voluptatum?</p>
             </section>
+        </article>
+        <article class="service-contact">
+            <h2 class="serviceH2">CONTACTANOS</h2>
+            <form action="">      
+                <div class="Name">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" alt="Nombre del contacto"/>
+                </div>
+                <div class="formEmail">
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" placeholder="nombre@ejemplo.com" alt="email del contacto"/>
+                </div>
+                <div class="formTel">
+                    <label for="telefono">Whatsapp</label>
+                    <input type="tel" name="telefono" palceholder="numero de area + número de tel" alt="telefono del contacto"/>
+                </div> 
+                <div class="formService">
+                    <label for="service">¿Que estas buscando?</label>
+                    <select name="serv">
+                        <option value="Arg">Housing</option>
+                        <option value="Esp">Soporte</option>
+                        <option value="Uru">armado de rig</option>
+                    </select> 
+                </div>
+                <div class="formUrl">
+                    <label  for="url">Red social/Web</label>
+                    <input type="url" name="url" placeholder="https://www.ejemplo.com" alt="web del contacto"/>
+                </div>
+                <input type="submit" value="enviar" alt="enviar formulario"/>             
+            </form>
         </article>
     </footer>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 

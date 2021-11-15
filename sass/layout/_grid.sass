@@ -79,41 +79,39 @@
 .service  
     background: $black;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);     
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);      
     height: 100%;
     width: 100%;
     z-index: 1;
     grid-gap: 1px;
     padding-bottom: 2rem; 
+    p
+        text-align: center;
 /////////// distro
+    
 .grid-1 //SUPORT
-    grid-area: 3 / 1 / 4 / 8;
-.grid-2
-    grid-area: 2 / 1 / 3 / 8;
+    grid-area: 1 / 3 / 6 / 4;
+    .service-soporte
+        background-position: 70%;
+        background-size: 300%;
+    .soporte
+.grid-2 //armado de rig
+    grid-area: 1 / 1 / 6 / 2;
+    .service-rig
+        background-position: 36%;
+        background-size: 300%; 
+    .rig    
 .grid-3  //HOUSING
-    grid-area: 1 / 1 / 2 / 8; 
-.service-contact 
-    grid-area: 1 / 8 / 4 / 13;
+    grid-area: 1 / 2 / 6 / 3;
+    .service-housing
+        background-position: 30%;
+    .housing
+.service-contact
     background: $white;
     display: flex;
     flex-direction: column;
-//////////////////
-//grid FOOTER
-#about
-    z-index: 1;
-    article
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 1fr);
-.about-1
-    grid-area: 1 / 1 / 4 / 13;
-.about-2
-    grid-area: 4 / 1 / 7 / 13;
-.about-3
-    grid-area: 7 / 1 / 10 / 13;
-.about-4
-    grid-area: 10 / 1 / 13 / 13; 
+
 //GRID PARA HEADER DEL INDEX panel de valores
 .value-crypto
  grid-area: 3 / 2 / 4 / 4;

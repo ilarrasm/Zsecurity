@@ -1,0 +1,31 @@
+form
+    width: 25%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+input
+    margin-right: .5rem;
+    border: none;
+    text-decoration: none;
+    padding: 1rem;
+$form: Email Tel Url Service Name
+@each $i in $form
+    .form#{$i}
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 3%;
+input[type=submit]
+    background: $black;
+    color: $white;
+    border: none;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-top: 5%;
+select
+    background: $black;
+    color: $white;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    padding: 1rem;

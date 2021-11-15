@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zod Security es una empresa dedicada a la seguridad de equipos de alto rendimiento enfocados en minar criptomonedas. Conoce mas de nuestros productos y servicios para pontenciar tu produccion."> 
+    <meta name="keywords" content="cryptocurrencie, criptomonedas, cryptomonedas, crypto, rig, mineria, data center, data, center, energia, seguridad, inversion, bitcoin. lite, ethereum, monero, instalacion electrica, potente, rig, mineria, miner, gpu, amd, ati, intel, ryzen, i9, servidor, monedero">
     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.18.0.min.js"></script>
     <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
     <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
@@ -18,7 +20,7 @@
             <ul class="header__nav__menu flex-row">
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="index.html">HOME</a></li>
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#about">ABOUT US</a></li>
-                <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="contact.html">CONTACTANOS</a></li> 
+                <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#contact">CONTACTANOS</a></li> 
             </ul>
         </nav>
         <article class="intro">
@@ -76,42 +78,44 @@
         </article>
     </main>
     <footer id="about">
-        <h2 class="tituloH2">Sobre ZodSecurity</h2>
         <article>
+            <h2 class="tituloH2">Sobre ZodSecurity</h2>
             <section class="about-1">
                 <h3>Conexiones instantaneas</h3>
                 <div></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, dignissimos nulla? Laborum reprehenderit aspernatur, omnis explicabo porro atque deleniti amet molestiae culpa optio adipisci non, dignissimos consequuntur sapiente repellat voluptatum?</p>
+                <p>para minar de manera competitiva, hoy en dia necesitas invertir importantes recursos, tiempo y esfuerzo en su setup. Nuestros tecnicos han diseñado los equipos mas eficientes en el minado de criptomonedas.</p>
             </section>
             <section class="about-2">
                 <h3>Concluciones instantaneas</h3>
+                <p>zod Security es tu mejor opcion para olvidarte de los contratiempos de la mineria para que pueda entregarse a pleno al seguimiento de los mercados.</p>
             </section>
             <section class="about-3">
                 <h3>Estadisticas detalladas</h3>
-                
+                <p>Brindamos toda la informacion necesaria para conocer el rendimiento de tu proximo rig o las ganancias que generara trabajando en nuestro Data Center.</p>
             </section>
             <section class="about-4">
                 <h3>Distribución Electrica</h3>
+                <p>Nuestros equipos estan preparados para sortear cualquier inconveniente electrico. La estructura de nuestro data center cumple con las exigencias globales para mantener el ritmo constante de los equipos.</p>
             </section>
         </article>
         <article class="service-contact">
             <h2 class="serviceH2">CONTACTANOS</h2>
-            <form action="">      
-                <div class="Name">
+            <form action="js/enviar.php" id="contact" method="post">      
+                <div class="formName">
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" alt="Nombre del contacto"/>
+                    <input type="text" name="nombre" id="name" alt="Nombre del contacto"/>
                 </div>
                 <div class="formEmail">
                     <label for="email">Correo</label>
-                    <input type="email" name="email" placeholder="nombre@ejemplo.com" alt="email del contacto"/>
+                    <input type="email" name="email" id="email" placeholder="nombre@ejemplo.com" alt="email del contacto"/>
                 </div>
                 <div class="formTel">
                     <label for="telefono">Whatsapp</label>
-                    <input type="tel" name="telefono" palceholder="numero de area + número de tel" alt="telefono del contacto"/>
+                    <input type="tel" name="telefono" id="phone" palceholder="numero de area + número de tel" alt="telefono del contacto"/>
                 </div> 
                 <div class="formService">
                     <label for="service">¿Que estas buscando?</label>
-                    <select name="serv">
+                    <select name="serv" id="serv">
                         <option value="Arg">Housing</option>
                         <option value="Esp">Soporte</option>
                         <option value="Uru">armado de rig</option>

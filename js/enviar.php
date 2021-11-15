@@ -4,7 +4,7 @@
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
+$message = $_POST['serv'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";

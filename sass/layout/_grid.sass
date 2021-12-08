@@ -7,13 +7,13 @@
     height: 80vh;
 ///ELEMENTOS-GRID!!!!!!!!!!!
 .header__nav
-    grid-area: 1 / 3 / 2 / 5;
-#particles-js
-    grid-area: 2 / 1 / 5 / 2;
+    grid-area: 1 / 1 / 2 / 5;
 .header__logo
     grid-area: 1 / 1 / 2 / 2; 
+    z-index: 1
 .intro
-    grid-area: 2 / 2 / 4 / 5; 
+    grid-area: 3 / 2 / 4 / 5; 
+    z-index: 1
 ///////////////////
 //grid crypto-INDEX!!!!!!!!!!!
 .crypto
@@ -76,48 +76,36 @@
 ////////////////////////////
 /////Grid de service
 .service  
-    background: $black;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);      
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    grid-gap: 5px;
-    p
-        text-align: center;
+    background: $black
+    display: grid
+    grid-template-columns: repeat(3, 33%)
+    grid-template-rows: repeat(3, 100%) 10vh
+    width: 100%
+    z-index: 1
+    justify-items: center
 /////////// distro
     
 .grid-1 //SUPORT
-    grid-area: 1 / 3 / 6 / 4;
+    grid-area: 2 / 1 / 3 / 2
     .service-soporte
-        background-position: 70%;
-        background-size: 300%;
-    .soporte
+        background-position: 50% 20%;
 .grid-2 //armado de rig
-    grid-area: 1 / 1 / 6 / 2;
+    grid-area: 2 / 2 / 3 / 3
     .service-rig
-        background-position: 36%;
-        background-size: 300%; 
-    .rig    
+        background-position: 36%;   
 .grid-3  //HOUSING
-    grid-area: 1 / 2 / 6 / 3;
+    grid-area: 2 / 3 / 3 / 4
     .service-housing
         background-position: 30%;
-    .housing
-.service-contact
-    background: $white;
-    display: flex;
-    flex-direction: column;
-
+        background-size: cover
 //GRID PARA HEADER DEL INDEX panel de valores
 .value-crypto
  grid-area: 3 / 2 / 4 / 4;
  display: grid;
  grid-template-columns: repeat(12, 1fr);
  grid-template-rows: repeat(12, 1fr);
- grid-column-gap: 0px;
- grid-row-gap: 0px;
+ grid-column-gap: 2px;
+ grid-row-gap: 2px;
  background-color: $white;
 //////////////////////
 /// Distribucion de grid
@@ -146,3 +134,64 @@
     grid-area: 11 / 8 / 13 / 13;  
     background: $violetM;
 //////////////////////////////
+.gridContact
+    display: grid
+    grid-template-columns: 5% repeat(5, 1fr) 5%
+    grid-template-rows: repeat(12, 1fr) 
+    background: $black
+    height: 100vh
+.tituloForm
+    grid-area: 1 / 2 / 2 / 7
+    height: 100%
+    width: 100%
+    align-items: center
+    justify-content: center
+    z-index: 1
+.infoContact
+    grid-area: 8 / 2 / 13 / 7
+    background: blue
+    height: 100%   
+    background: $white
+    z-index: 1
+    padding: 4rem
+.formBackground
+    width: 100%
+    height: 100%
+    grid-area: 1 / 1 / 6 / 8
+    background: $blue
+    z-index: 0
+.formIndex
+    grid-area: 2 / 2 / 8 / 7
+    display: grid
+    grid-template-rows: repeat(7, 1fr)
+    grid-template-columns: repeat(12, 1fr)
+    width: 100%
+    height: 100%
+    padding: 3rem
+    align-items: center
+    background: $white
+    border-radius: 5px
+    justify-items: center
+    z-index: 1
+.DataContact
+    grid-area: 1 / 1 / 2 / 7
+    color: $black
+.consultaH3
+    grid-area: 1 / 7 / 2 / 13
+    color: $black
+.formName
+    grid-area: 2 / 1 / 3 / 7
+.formEmail
+    grid-area: 3 / 1 / 4 / 7
+.formTel
+    grid-area: 4 / 1 / 5 / 7
+.formUrl
+    grid-area: 5 / 1 / 6 / 7
+.formService
+    grid-area: 3 / 7 / 4 / 13
+.formPresupuesto
+    grid-area: 2 / 7 / 3 / 13
+.formArea
+    grid-area: 4 / 7 / 7 / 13
+input[type=submit]  
+    grid-area: 7 / 1 / 8 / 13

@@ -2,40 +2,35 @@
         display: flex;
         align-self: center;
         align-items: center;
-        z-index: 1;
+        background: $blackGradientO
+        height: 100%
+        z-index: 1
         &__menu
             &__item
                 list-style: none;
+                margin: .4em
+                border-radius: 5px 
+                overflow: hidden
                 &__link
+                    display: flex
                     text-decoration: none;
-                    color: rgba(233,224,255,1);
-                    padding: 1rem;
-                    margin: 1rem;
-                    font-weight: 700;
-                    font-size: 1.3em;
+                    color: $white
+                    padding: .4rem 2.5rem;
+                    font-weight: 300;
+                    font-size: .9em;
                     user-select: none;
-                    z-index: 1;
-                    transition: .1s;
-                    &::after
-                        content: "";
-                        display: flex;
-                        width: 0%;
-                        height: .1rem;
-                        background: $wow0;
-                        position: relative;
-                        top: 0%;
-                        left: 0%;
-                        transition: .2s ease;
-                    &:hover::after
-                        backdrop-filter: blur(40px);
+                    transition: background .5s;
+                    &:hover
                         width: 100%;
+                        background: $blue
+                        color: $white
 .header__logo
-    z-index: 1;
+    z-index: 2
     img
-        height: 17vh;
+        height: 10vh;
         width: auto;
         user-select: none;
-        opacity: 1;
+        z-index: 2
 .infoCrypto
     display: flex;
     flex-direction: column;

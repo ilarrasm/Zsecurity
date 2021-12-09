@@ -17,27 +17,29 @@
         height: 100% 
         align-self: center
         justify-self: center
+        filter: drop-shadow(0 0 3px powderblue)
 .infoContact
     display: flex
     flex-direction: row-reverse
     width: 100%
     &__info
         p
+            font-size: 1em
 .tituloFaq
-    font-size: 1rem
+    font-size: 3rem
     color: $black
+    font-weight: 300
 .divisoria-v
     content: ""
+    height: 100%
+    width: 2px
+    background: $black
+    margin: 1rem
 .redesSociales
     display: flex
     flex-direction: column
     width: 100%
     &__ul
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: center
-        flex-wrap: wrap
         &__li
             list-style: none
             width: 100%
@@ -48,11 +50,32 @@
                 align-items: center
                 justify-content: flex-end
                 text-decoration: none
-                padding: .5rem
                 color: $black
             &__facebook
             &__instagram
             &__twitter
             &__support
+                display: flex
+                align-items: center
             &__correo
+                display: flex
+                align-items: center
             &__whatsapp
+                display: flex
+                align-items: center
+.listFaq
+    list-style: none
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    z-index: 1
+    margin: 1rem 0
+    &::before
+        content: ""
+        display: inline-block
+        width: 3px
+        height: 3px
+        background: url("../media/ico/listFaq.svg")
+        background-size: cover
+        z-index: 2  
+        padding: 1rem

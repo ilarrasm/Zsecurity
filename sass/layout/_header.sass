@@ -1,36 +1,35 @@
 .header__nav
         display: flex;
-        align-self: center;
-        align-items: center;
-        background: $blackGradientO
+        justify-content: flex-end
+        align-items: center
         height: 100%
         z-index: 1
         &__menu
             &__item
-                list-style: none;
+                list-style: none
                 margin: .4em
-                border-radius: 5px 
                 overflow: hidden
                 &__link
                     display: flex
-                    text-decoration: none;
+                    text-decoration: none
                     color: $white
-                    padding: .4rem 2.5rem;
-                    font-weight: 300;
-                    font-size: .9em;
-                    user-select: none;
-                    transition: background .5s;
+                    padding: .4rem .5rem
+                    font-weight: 300
+                    font-size: 1.3em
+                    user-select: none
+                    transition: opacity .5s
+                    opacity: .6
                     &:hover
-                        width: 100%;
-                        background: $blue
-                        color: $white
+                        opacity: 1
+                        filter: drop-shadow(0 0 5px $white)
+                        
+                        
 .header__logo
     z-index: 2
     img
         height: 10vh;
         width: auto;
         user-select: none;
-        z-index: 2
 .infoCrypto
     display: flex;
     flex-direction: column;

@@ -140,6 +140,7 @@ $service: rig soporte housing
         grid-area: 2 / 2 / 4 / 7
         font-weight: 200
         align-items: center
+        text-shadow: 0 0 5px $blue
      p
         color: $white
         font-size: 1.4em
@@ -161,12 +162,20 @@ $form: Email Tel Url Service Name Presupuesto Area
         z-index: 1
         width: 100%
 ///Logos redes sociales
-$logos: instagram twitter linkedin facebook support whatsapp correo
+$logos: instagram twitter linkedin facebook
 @each $i in $logos
     .contact-#{$i}
         display: flex
         background-image: url('../media/RS/#{$i}.svg')
-        width: 15px
-        height: 15px
-        padding: .5rem
+        padding: 1rem
+        background-repeat: no-repeat
+        width: 100%
+        height: 100%
+$contact: support whatsapp correo
+@each $i in $contact
+    .contact-#{$i}
+        display: flex
+        background-image: url('../media/RS/#{$i}.svg')
+        padding: .6rem
+        background-repeat: no-repeat
         margin-right: .4rem

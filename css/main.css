@@ -832,6 +832,13 @@ h1, h2, h3, h4 {
         opacity: 1;
         filter: drop-shadow(0 0 5px whitesmoke); }
 
+.topnav {
+  display: none; }
+
+#myLinks {
+  display: none;
+  background: #181717; }
+
 .header__logo {
   z-index: 2; }
   .header__logo img {
@@ -1387,6 +1394,20 @@ select {
 #qc-marquee {
   width: 10vw; }
 
+.slideshow-container {
+  grid-area: 4 / 1 / 5 / 7;
+  justify-self: center;
+  z-index: 3; }
+
+.mySlides img {
+  z-index: 4;
+  height: 5vh; }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade .3s linear; }
+
 .header-index {
   background-color: #181717;
   background-image: url(../media/background.jpg);
@@ -1437,6 +1458,16 @@ select {
     filter: blur(5px); }
   100% {
     filter: blur(10px); } }
+
+@keyframes fade {
+  0% {
+    opacity: 1; }
+  75% {
+    opacity: .9; }
+  85% {
+    opacity: .4; }
+  100% {
+    opacity: 0; } }
 
 @media (min-width: 756px) and (max-width: 815px) {
   .tituloService {
@@ -1495,14 +1526,7 @@ select {
 
 @media only screen and (max-width: 756px) {
   .index-titulo {
-    font-size: 1rem; }
-  .header__nav {
-    background: none; }
-    .header__nav__menu__item {
-      margin: 0; }
-      .header__nav__menu__item__link {
-        font-size: .9rem;
-        padding: .4rem; }
+    font-size: 3rem; }
   .tituloH3Crypto {
     font-size: 2em; }
   .about-1 {
@@ -1680,7 +1704,7 @@ select {
   .gridContact {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 70vh 100vh;
+    grid-template-rows: 30% 70vh 100%;
     background: #181717;
     width: 100%; }
     .gridContact h2 {
@@ -1846,3 +1870,30 @@ select {
       grid-row: 2 / 3; }
     .service-housing a {
       opacity: 1; } }
+
+@media only screen and (max-width: 756px) {
+  .header__nav {
+    display: none; }
+  .topnav {
+    display: flex;
+    grid-area: 1 / 1 / 3 / 5;
+    overflow: hidden;
+    position: relative;
+    z-index: 3; }
+  .topnav a {
+    color: whitesmoke;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block; }
+  .topnav a.icon {
+    background: #181717;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav a:hover {
+    background-color: whitesmoke;
+    color: #181717; }
+  #myLinks {
+    width: 100%; } }

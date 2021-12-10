@@ -11,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
     <link rel="stylesheet" href="css/particle.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="media/logo.ico">
     <title>Zod Security | Tecnología en su maxima expresión</title>
 </head>
@@ -24,12 +25,37 @@
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#contact">CONTACTANOS</a></li> 
             </ul>
         </nav>
+        <div class="topnav">
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a class="header__nav__menu__item__link" href="index.html">HOME</a>
+                <a class="header__nav__menu__item__link" href="#about">ABOUT US</a>
+                <a class="header__nav__menu__item__link" href="#contact">CONTACTANOS</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <article class="intro">   
             <section class="intro__section">
                 <h1 class="index-titulo">Tecnologia en su maxima expresion</h1>
                 <span class="light-tron" style="width: 100%;"></span>
+                </div>
             </section>
         </article>
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="media/patners/pny.png">
+            </div>
+            <div class="mySlides fade">
+                <img src="media/patners/evga.svg">
+            </div>
+            <div class="mySlides fade">
+                <img src="media/patners/asrock-logo-1.svg">
+            </div>
+        </div>
     </header>
     <main class="main">
         <article class="service">
@@ -106,7 +132,7 @@
             </div>
         </article>
         <article class="service-contact gridContact">
-                <h2 class="tituloForm"> CONTACTANOS</h2>
+                <h2 id="contact" class="tituloForm"> CONTACTANOS</h2>
                 <div class="infoContact">
                     <div class="redesSociales">
                         <h3 class="tituloRs">NUESTRAS REDES SOCIALES</h3>
@@ -187,5 +213,6 @@
             <h3 class="tituloH3Crypto flex-column">Monedas soportadas</h3>
         </article>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

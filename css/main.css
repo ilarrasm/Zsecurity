@@ -1046,7 +1046,7 @@ h1, h2, h3, h4 {
   background: #181717;
   display: grid;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 100%) 10vh;
+  grid-template-rows: repeat(3, 0fr) 10vh;
   width: 100%;
   z-index: 1;
   justify-items: center;

@@ -1,36 +1,40 @@
 //HEADER INDEX GRID
 .header-index
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: 15% 30% 35% 20%; 
-    width: 100%;
-    height: 80vh;
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr 1fr
+    grid-template-rows: 15% 30% 35% 20% 
+    width: 100%
+    height: 80vh
 ///ELEMENTOS-GRID!!!!!!!!!!!
 .header__nav
-    grid-area: 1 / 2 / 2 / 5;
+    grid-area: 1 / 2 / 2 / 5
 .header__logo
-    grid-area: 1 / 1 / 2 / 2; 
-.intro
-    grid-area: 3 / 1 / 4 / 5; 
+    grid-area: 1 / 1 / 2 / 2
+.tituloIndex
+    grid-area: 2 / 1 / 4 / 5
     z-index: 1
-    margin-left: 5%
+    align-self: center
+    justify-self: center
+#particles-js
+    grid-area: 2 / 1 / 5 / 5
+    
 ///////////////////
 //grid crypto-INDEX!!!!!!!!!!!
 .crypto
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background: $black;
-    z-index: 1;
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(8, 1fr)
+    background: $black
+    z-index: 1
 ///ELEMENTOS GRID
 .tituloH3Crypto
-    grid-area: 2 / 4 / 4 / 10;
-    align-self: center;
-    text-align: center;
+    grid-area: 2 / 4 / 4 / 10
+    align-self: center
+    text-align: center
 .grid-icons 
-    grid-area: 4 / 1 / 9 / 13;
+    grid-area: 4 / 1 / 9 / 13
 .elements-light-l
-    grid-area: 12 / 1 / 13 / 13;
+    grid-area: 12 / 1 / 13 / 13
 
 /////////////////////
 //GRID DE CRYPTO ICONOS        
@@ -77,18 +81,26 @@
     z-index: 1
     justify-items: center
     padding-top: 1%
-    &__banner
-        grid-area: 1 / 1 / 2 / 4
-        display: flex
-        flex-direction: column
 /////////// distro
 .subServices
-    grid-area: 2 / 1 / 3 / 4
-    padding: 1rem
-    font-size: 1.4em
-    align-self: center
+    grid-area: 2 / 1 / 3 / 2
+    font-size: 5em
     color: $white
     text-transform: uppercase
+    font-weight: 700
+    width: 100%
+    height: 100%
+    letter-spacing: 35px
+    padding: 1rem
+    &__span
+        grid-area: 2 / 2 / 3 / 4
+        font-size: 2em
+        align-self: center
+        color: $blueLight
+        font-weight: 300
+        font-style: italic
+        text-transform: uppercase
+        padding: 1rem
 .grid-1 //SUPORT
     grid-area: 3 / 1 / 4 / 2
     .service-soporte

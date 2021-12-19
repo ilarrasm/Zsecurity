@@ -127,24 +127,7 @@ $service: rig soporte housing
         opacity: .3
         transition: 1.1s ease-out
 //ABOUT-GRID    
-@for $i from 1 through 4
-    .about-#{$i}
-     display: grid
-     grid-template-rows: repeat(1, 1fr) 
-     grid-template-columns: repeat(2, 1fr)
-     height: 30vh
-     padding: .5rem .5rem 5.5rem .5rem
-     h3
-        color: $blue
-        font-size: 3.4em
-        text-transform: uppercase
-        grid-area: 1 / 1 / 2 / 3
-        font-weight: 200
-        align-items: center
-        text-shadow: 0 0 5px $blue
-    span
-        grid-area:  1 / 2 / 2 / 3
-        align-items: center
+
 $form: Email Tel Url Service Name Presupuesto Area
 @each $i in $form
     .form#{$i}

@@ -17,13 +17,36 @@
 .faq
     background: $black
 .tituloFaq
+    color: $white
 .detailsFaq
     background: $white
     margin: 1rem
-    padding: 1rem
+    user-select: none
+    cursor: pointer
+    border-radius: 20px
+    transition: all 0.5s ease-out
+    &__content
+        height: 0vh
+    &[open] > &__content
+        height: 10vh
+    &:hover
+        box-shadow: 0 0 15px $blueLight
+        transition: background box-shadow 2s
+    &:hover > &__sumary
     &__sumary
         color: $black
         font-size: 1.5rem
         border-radius: 15px
+        padding: .5rem
+        margin-left: .5rem
+        list-style: none
     p
         color: $black
+        background: $white
+        border-radius: 0 0 20px 20px 
+        margin: .1rem 0rem
+        padding: 1rem
+        cursor: text
+        user-select: text
+#about
+    scroll-behavior: smooth

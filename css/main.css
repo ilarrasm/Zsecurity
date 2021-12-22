@@ -747,7 +747,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   background: #181717;
-  height: auto;
+  height: 100%;
   width: auto; }
   .about__about {
     display: flex;
@@ -810,6 +810,39 @@ h1, h2, h3, h4 {
     background-size: cover;
     z-index: 2;
     padding: 1rem; }
+
+.about__about__tittles {
+  display: grid;
+  grid-template-columns: 1fr 5% 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  grid-row-gap: 1rem; }
+  .about__about__tittles-h3 {
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 35vh;
+    border: solid 1px whitesmoke; }
+  .about__about__tittles-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/service/header.webp"); }
+
+.grid-one {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.grid-two {
+  grid-area: 1 / 3 / 2 / 4; }
+
+.grid-three {
+  grid-area: 2 / 1 / 3 / 2; }
+
+.grid-four {
+  grid-area: 2 / 3 / 3 / 4; }
+
+.grid-five {
+  grid-area: 1 / 2 / 3 / 3; }
 
 .header-index {
   display: grid;
@@ -1278,7 +1311,9 @@ select {
   justify-content: center; }
 
 .faq {
-  background: #181717; }
+  background: #181717;
+  height: 100%;
+  padding: 1rem; }
 
 .tituloFaq {
   color: whitesmoke; }
@@ -1290,12 +1325,8 @@ select {
   cursor: pointer;
   border-radius: 20px;
   transition: all 0.5s ease-out; }
-  .detailsFaq__content {
-    height: 0vh; }
-  .detailsFaq[open] > .detailsFaq__content {
-    height: 10vh; }
   .detailsFaq:hover {
-    box-shadow: 0 0 15px #3CDCFF;
+    box-shadow: 0 0 7px #3CDCFF;
     transition: background box-shadow 2s; }
   .detailsFaq__sumary {
     color: #181717;

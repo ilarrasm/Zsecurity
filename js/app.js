@@ -191,7 +191,7 @@ class Accordion {
       // Set the keyframes from the startHeight to endHeight
       height: [startHeight, endHeight]
     }, {
-      duration: 400,
+      duration: 600,
       easing: 'ease-out'
     });
     

@@ -830,6 +830,7 @@ h1, h2, h3, h4 {
   grid-area: 1 / 1 / 2 / 2; }
 
 .tituloIndex {
+  display: none;
   grid-area: 2 / 1 / 4 / 5;
   z-index: 1;
   align-self: center;
@@ -1280,6 +1281,20 @@ select {
 .main {
   height: auto;
   justify-content: center; }
+
+.faq {
+  background: #181717; }
+
+.detailsFaq {
+  background: whitesmoke;
+  margin: 1rem;
+  padding: 1rem; }
+  .detailsFaq__sumary {
+    color: #181717;
+    font-size: 1.5rem;
+    border-radius: 15px; }
+  .detailsFaq p {
+    color: #181717; }
 
 @keyframes pip {
   0% {

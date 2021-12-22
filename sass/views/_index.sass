@@ -15,29 +15,57 @@
     height: auto
     justify-content: center
 .faq
+    display: flex
+    flex-flow: column wrap
     background: $black
     height: 100%
     padding: 1rem
 .tituloFaq
+    font-size: 6em
     color: $white
+    font-weight: 200
+    align-self: center
 .detailsFaq
     background: $white
     margin: 1rem
     user-select: none
     cursor: pointer
-    border-radius: 20px
+    border-radius: 10px
     transition: all 0.5s ease-out
+    width: 80%
+    align-self: center
+    overflow: hidden
     &:hover
         box-shadow: 0 0 7px $blueLight
         transition: background box-shadow 2s
+    &:hover > &__sumary::before
+        width: 100%
+        right: 0
+    &:hover > &__sumary
+        color: $white
     &__sumary
         color: $black
         font-size: 1.5rem
-        border-radius: 15px
         padding: .5rem
-        margin-left: .5rem
         list-style: none
-    p
+        font-weight: 200
+        text-align: center
+        position: relative
+        z-index: 5
+        overflow: hidden
+        transition: color .3s .3s
+        &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            top: 0%
+            left: 0%
+            width: 0%
+            height: 100%
+            background: $blueLight
+            transition: width 2.2s
+            z-index: -1
+    &__content
         color: $black
         background: $white
         border-radius: 0 0 20px 20px 
@@ -45,5 +73,6 @@
         padding: 1rem
         cursor: text
         user-select: text
+        transition: color 2s
 #about
     scroll-behavior: smooth

@@ -143,9 +143,9 @@ class Accordion {
     // Store the <details> element
     this.el = el;
     // Store the <summary> element
-    this.summary = el.querySelector('.detailsFaq__sumary');
+    this.summary = el.querySelector('.details__sumary');
     // Store the <div class="content"> element
-    this.content = el.querySelector('.detailsFaq__content');
+    this.content = el.querySelector('.details__content');
 
     // Store the animation object (so we can cancel it if needed)
     this.animation = null;
@@ -191,7 +191,7 @@ class Accordion {
       // Set the keyframes from the startHeight to endHeight
       height: [startHeight, endHeight]
     }, {
-      duration: 600,
+      duration: 500,
       easing: 'ease-out'
     });
     
@@ -229,8 +229,8 @@ class Accordion {
       // Set the keyframes from the startHeight to endHeight
       height: [startHeight, endHeight]
     }, {
-      duration: 400,
-      easing: 'ease-out'
+      duration: 500,
+      easing: 'ease-in-out'
     });
     // When the animation is complete, call onAnimationFinish()
     this.animation.onfinish = () => this.onAnimationFinish(true);
@@ -251,6 +251,6 @@ class Accordion {
   }
 }
 
-document.querySelectorAll('.detailsFaq').forEach((el) => {
+document.querySelectorAll('.details').forEach((el) => {
   new Accordion(el);
 });

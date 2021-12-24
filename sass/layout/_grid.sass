@@ -220,38 +220,17 @@ input[type=submit]
     grid-area: 6 / 1 / 7 / 13
 ////////Redes sociales
 .redesSociales
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: 35% 1fr
+    display: flex
 .tituloRs
     grid-area: 1 / 1 / 2 / 2
     font-weight: 300
-.contactDir
-    grid-area: 2 / 1 / 3 / 4
-    display: flex
-    align-items: center
-    &__tittle
-        color: $black
-        font-size: 1.3rem
-        font-weight: 200
-        text-align: center
-        justify-content: center
 .redesSociales__ul
     grid-area: 1 / 3 / 2 / 4
-    display: grid
-    grid-template-columns: repeat(2, 10vw)
-    grid-template-rows: repeat(2, 15vh)
+    display: flex
+    justify-content: space-between
+    align-items: center
     &__li a
-        height: 100%
-        width: 100%
-.facebook
-    grid-area: 1 / 1 / 2 / 2
-.instagram
-    grid-area: 1 / 2 / 2 / 3
-.twitter
-    grid-area: 2 / 1 / 3 / 2
-.linkedin
-    grid-area: 2 / 2 / 3 / 3
+        padding: 1rem
 .whatsapp, .correo, .support
     display: flex
     font-size: 1em

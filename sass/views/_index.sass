@@ -37,7 +37,7 @@
     overflow: hidden
     &:hover
         box-shadow: 0 0 7px $blueLight
-        transition: background box-shadow 2s
+        transition: background box-shadow .1s
     &:hover > &__sumary::before
         width: 100%
         right: 0
@@ -46,9 +46,9 @@
     &__sumary
         color: $black
         font-size: 1.5rem
-        padding: .5rem
+        padding: 1rem
         list-style: none
-        font-weight: 200
+        font-weight: 300
         text-align: center
         position: relative
         z-index: 5
@@ -74,5 +74,3 @@
         cursor: text
         user-select: text
         transition: color 2s
-#about
-    scroll-behavior: smooth

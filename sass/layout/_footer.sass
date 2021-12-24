@@ -4,11 +4,6 @@
     background: $black
     height: 100%
     width: auto
-    &__about
-        display: flex
-        flex-direction: column-reverse
-        padding: 1rem
-        margin: 1rem
 .infoContact
     display: flex
     flex-direction: row-reverse
@@ -26,10 +21,12 @@
     display: flex
     flex-direction: column
     width: 100%
+    position: relative
+    overflow: hidden
     &__ul
         &__li
             list-style: none
-            width: 100%
+            padding: 2rem
             a
                 display: flex
                 font-size: .9em
@@ -38,41 +35,45 @@
                 justify-content: flex-end
                 text-decoration: none
                 color: $black
-            &__facebook
-            &__instagram
-            &__twitter
-            &__correo
-                display: flex
-                align-items: center
-.about__about__tittles
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-template-rows: repeat(1, 1fr)
-    justify-items: center
-    grid-row-gap: 1rem
-    padding: 1rem
-    &-h3
-        color: $blueLight
-        align-items: flex-start
-        justify-content: flex-start
-        width: 80%
-        height: 45vh
-        box-shadow: 0 0 10px $black
-        background: rgba(0, 0, 0, .2)
-        border-radius: 20px
-        font-size: 3rem
-        font-weight: 900
-        margin: 1rem
-        padding: 1rem
-    &-pic
-        display: block
-        width: 100%
-        height: 100%
-        background-image: url('../media/service/header.webp')
-        background-size: cover
-        z-index: 1
-        opacity: .9
-
+.zodsecurity
+    font-style: italic
+    font-size: 5rem
+    font-weight: 600
+    text-transform: uppercase
+    position: absolute
+    bottom: 5%
+    right: 1%
+    z-index: 0
+    opacity: .1
+    color: black
+    text-align: right
+    z-index: 55
+    width: 60%
+.about__about
+    display: flex
+    flex-direction: row
+    &__tittles
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        width: 100% 
+        &-h3
+            background: $blueViento
+            color: $white
+            border-radius: 20px 20px 20px 0
+            font-size: 1.5rem
+            font-weight: 900
+            position: relative
+            z-index: 3
+        &-pic
+            display: block
+            height: 1000px
+            width: 100%
+            background-image: url('../media/about/datacenter.png')
+            background-size: contain
+            background-repeat: no-repeat
+            z-index: 1
+            opacity: .9
 .grid-one
     grid-area: 1 / 1 / 2 / 2
 .grid-two
@@ -83,5 +84,54 @@
     grid-area: 2 / 2 / 3 / 3
 .grid-five
     grid-area: 1 / 1 / 3 / 3
-.grid-one, .grid-two, .grid-three, .grid-four 
-    z-index: 5
+.grid-one, .grid-two, .grid-three, .grid-four
+    width: 80%
+    align-self: center
+    justify-self: center
+    transition: all 0.5s ease-out
+.details
+    overflow: hidden
+    &__content
+        color: $white
+        border-radius: 0 0 20px 20px 
+        cursor: text
+        user-select: text
+        transition: color 2s
+        height: 100%
+        p
+            margin: .1rem 1rem 1rem 2rem
+            font-size: .9em 
+            font-weight: 300
+    &__sumary
+        list-style: none
+        font-size: .9em
+        padding: 1rem
+.contactDir
+    display: flex
+    align-items: center
+    background: $black
+    width: 45%
+.correox
+        color: $white
+        font-size: 2rem
+        font-weight: 600
+        text-align: center
+        justify-content: center
+        text-transform: uppercase
+.fa-at
+    font-size: 2rem
+    color: $whiteFlor   
+    background: $blueLight
+    border-radius: 40px
+    padding: 1rem
+    margin: 1rem
+.fa-instagram-square, .fa-facebook-f, .fa-linkedin-in, .fa-twitter, .fa-twitch
+    display: flex
+    font-size: 2rem
+    align-self: center
+    justify-self: center
+    padding: 1rem
+    &:hover
+        box-shadow: 0 0 5px $blueLight
+        background: $black
+        color: $blueLight

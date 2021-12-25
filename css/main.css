@@ -628,20 +628,13 @@ h1, h2, h3, h4 {
   color: whitesmoke;
   display: flex;
   flex-direction: column;
-  font-size: 4em;
+  font-size: 3em;
   align-self: flex-start;
-  width: 100%;
-  text-align: center; }
-  .aboutTitulo::after {
-    content: "";
-    display: flex;
-    align-self: center;
-    width: 50%;
-    height: .1rem;
-    background: radial-gradient(circle at 50% 50%, rgba(42, 246, 250, 0.7), rgba(42, 246, 250, 0.1));
-    position: relative;
-    top: 0;
-    left: 0; }
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  top: 7%;
+  right: 3%; }
 
 .tituloRs {
   font-size: 2em;
@@ -696,7 +689,8 @@ h1, h2, h3, h4 {
   flex-direction: column;
   background: #181717;
   height: 100%;
-  width: auto; }
+  width: auto;
+  position: relative; }
 
 .infoContact {
   display: flex;
@@ -743,11 +737,13 @@ h1, h2, h3, h4 {
   color: black;
   text-align: right;
   z-index: 55;
-  width: 60%; }
+  width: 60%;
+  user-select: none; }
 
 .about__about {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 80%; }
   .about__about__tittles {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -1393,8 +1389,13 @@ select {
     opacity: 0; } }
 
 @media (min-width: 756px) and (max-width: 815px) {
+  #particles-js {
+    width: 60vmax; }
   .tituloService {
     font-size: 3em; }
+  .aboutTitulo {
+    top: -2%;
+    font-size: 2rem; }
   .grid-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1445,7 +1446,34 @@ select {
   .icon-ergo span {
     font-size: 1.7em; }
   .icon-lite span {
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+  .divisoria-v {
+    display: none; }
+  .correox, .fa-at {
+    font-size: 1rem; }
+  .redesSociales {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%; }
+    .redesSociales__ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .redesSociales__ul__li {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        padding: 1rem; }
+        .redesSociales__ul__li a {
+          display: flex;
+          font-size: .9em;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          text-decoration: none;
+          color: #181717; } }
 
 @media only screen and (max-width: 756px) {
   .index-titulo {
@@ -1654,7 +1682,8 @@ select {
       .redesSociales__ul__li {
         list-style: none;
         width: 100%;
-        display: flex; }
+        display: flex;
+        padding: 1rem; }
         .redesSociales__ul__li a {
           display: flex;
           font-size: .9em;
@@ -1662,7 +1691,6 @@ select {
           align-items: center;
           justify-content: flex-start;
           text-decoration: none;
-          padding: .5rem;
           color: #181717; }
   .divisoria-v {
     width: 50%;
@@ -1819,4 +1847,24 @@ select {
     background-color: whitesmoke;
     color: #181717; }
   #myLinks {
-    width: 100%; } }
+    width: 100%; }
+  #particles-js {
+    width: 50vmax; }
+  .aboutTitulo {
+    position: static;
+    font-size: 1.2rem;
+    width: 100%; }
+  .tituloFaq {
+    font-size: 1.2rem; }
+  .about__about__tittles {
+    display: flex;
+    flex-direction: column-reverse; }
+    .about__about__tittles-h3 {
+      border-radius: 0px;
+      margin: .5rem; }
+    .about__about__tittles-pic {
+      width: 100%;
+      height: 300px;
+      background-size: cover; }
+  .details__sumary {
+    font-size: .7rem; } }

@@ -18,12 +18,12 @@
                 font-weight: 600
             a
                 opacity: 1
-    .infoContact
-        flex-direction: column
-    @each $name in $crypto-icon
-        .icon-#{$name} 
-            span
-                font-size: 1.7em
+        .infoContact
+            flex-direction: column
+        @each $name in $crypto-icon
+            .icon-#{$name} 
+                span
+                    font-size: 1.7em
     .divisoria-v
         display: none
     .correox, .fa-at
@@ -310,14 +310,16 @@
         a
             opacity: 1
 @media only screen and (max-width: 756px)
+    .header-index
+        height: 36vh
     .header__nav
         display: none
     .topnav 
         display: flex
-        grid-area: 1 / 1 / 3 / 5
+        grid-area: 1 / 1 / 5 / 5
         overflow: hidden
         position: relative
-        z-index: 3
+        z-index: 55
     .topnav a 
         color: $white
         padding: 14px 16px
@@ -336,22 +338,89 @@
     #myLinks 
         width: 100%
     #particles-js
-        width: 50vmax
+        width: 40vmax
     .aboutTitulo
+        display: flex
         position: static
         font-size: 1.2rem
         width: 100%
+        text-align: center
+        font-weight: 500
     .tituloFaq
         font-size: 1.2rem
-    .about__about__tittles
-        display: flex
-        flex-direction: column-reverse
-        &-h3
-            border-radius: 0px
-            margin: .5rem
-        &-pic
+    .about
+        &__about
             width: 100%
-            height: 300px
-            background-size: cover
+            &__tittles
+                display: flex
+                flex-direction: column-reverse
+                &-h3
+                    border-radius: 0px
+                    margin: .5rem
+                &-pic
+                    width: 100%
+                    height: 300px
+                    background-size: cover
     .details__sumary
         font-size: .7rem
+    //////////// FORM
+    #contact
+        font-size: 1.2rem
+    .formIndex
+        display: flex
+        flex-direction: column
+    .DataContact
+        font-size: 1rem
+    ////////// redes
+    .redesSociales
+        display: flex
+        flex-direction: column
+        position: relative
+        overflow: hidden
+        &__ul
+            &__li 
+                display: flex
+                flex-direction: column
+                list-style: none
+                a
+                    padding: 0
+    .gridContact
+        display: flex
+        flex-direction: column
+        background: $black
+    .tituloForm
+        grid-area: 1 / 1 / 2 / 2
+        height: 100%
+        width: 100%
+        align-items: center
+        justify-content: center
+        z-index: 1
+    .infoContact
+        grid-area: 8 / 1 / 13 / 2
+        background: blue
+        height: 50%   
+        background: $white
+        z-index: 1
+        padding: 0rem
+    .formIndex
+        grid-area: 2 / 1 / 8 / 2
+        display: flex
+        flex-direction: column
+    ////////Redes sociales
+    .redesSociales
+        display: flex
+    .tituloRs
+        font-weight: 300
+        font-size: 1rem
+    .zodsecurity
+        display: none
+    .fa-instagram-square, .fa-facebook-f, .fa-linkedin-in, .fa-twitter, .fa-twitch
+        font-size: 2em 
+        padding: 0rem
+        margin: 0rem
+    .contactDir
+        width: 100%
+    .correox
+        font-size: 1rem
+    .divisoria-v
+        display: none

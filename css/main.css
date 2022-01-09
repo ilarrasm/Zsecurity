@@ -751,7 +751,8 @@ h1, h2, h3, h4 {
   flex-direction: column;
   width: 100%;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #181717; }
   .redesSociales__ul__li {
     list-style: none;
     padding: 2rem; }
@@ -1474,6 +1475,11 @@ select {
           color: #181717; } }
 
 @media only screen and (max-width: 756px) {
+  .registrarse {
+    padding: .4rem; }
+  .btnReg {
+    font-size: 1.5em;
+    padding: .4rem; }
   .index-titulo {
     font-size: 3rem; }
   .tituloH3Crypto {
@@ -1838,7 +1844,6 @@ select {
     font-size: 17px;
     display: block; }
   .topnav a.icon {
-    background: #181717;
     display: block;
     position: absolute;
     right: 0;

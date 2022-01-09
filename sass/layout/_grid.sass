@@ -1,0 +1,176 @@
+//HEADER INDEX GRID
+.header-index
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr 1fr
+    grid-template-rows: 15% 30% 35% 20% 
+    width: 100%
+    height: 80vh
+///ELEMENTOS-GRID!!!!!!!!!!!
+.header__nav
+    grid-area: 1 / 2 / 2 / 5
+.header__logo
+    grid-area: 1 / 1 / 2 / 2
+.tituloIndex
+    display: none
+    grid-area: 2 / 1 / 4 / 5
+    z-index: 1
+    align-self: center
+    justify-self: center
+#particles-js
+    grid-area: 2 / 1 / 5 / 5
+    
+///////////////////
+//grid crypto-INDEX!!!!!!!!!!!
+.crypto
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: repeat(8, 1fr)
+    background: $black
+    z-index: 1
+///ELEMENTOS GRID
+.tituloH3Crypto
+    grid-area: 2 / 4 / 4 / 10
+    align-self: center
+    text-align: center
+.grid-icons 
+    grid-area: 4 / 1 / 9 / 13
+.elements-light-l
+    grid-area: 12 / 1 / 13 / 13
+
+/////////////////////
+//GRID DE CRYPTO ICONOS        
+.grid-icons
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+////////////////////////////S
+.icon-bitcoin
+    grid-area: 1 / 1 / 2 / 2;
+    background-position: 50% 50%;
+.icon-ethereum
+    grid-area: 1 / 2 / 2 / 3;
+    background-position: 98% 60%;
+    background-size: 70%; 
+.icon-ravencoin
+    grid-area: 1 / 3 / 2 / 4;
+    background-position: 100% 0%;
+.icon-shiba
+    grid-area: 2 / 1 / 3 / 2;
+    background-position: 50% 60%;
+    background-size: 235%; 
+.icon-etc
+    grid-area: 2 / 2 / 3 / 3;
+    background-position: 100% 60%;
+    background-size: 70%; 
+.icon-monero
+    grid-area: 2 / 3 / 3 / 4;
+    background-position: 50% 50%;
+.icon-ergo
+    grid-area: 1 / 4 / 2 / 5;
+    background-position: 50% 50%;
+.icon-lite
+    grid-area: 2 / 4 / 3 / 5;
+    background-position: 50% 50%;
+////////////////////////////
+/////Grid de service
+.service  
+    background: $black
+    display: grid
+    grid-template-columns: repeat(3, 33%)
+    grid-template-rows: repeat(3, 0fr) 10vh
+    width: 100%
+    z-index: 1
+    justify-items: center
+    padding-top: 1%
+/////////// distro
+.subServices
+    grid-area: 1 / 1 / 2 / 4
+    font-size: 5em
+    color: $white
+    text-transform: uppercase
+    font-weight: 700
+    width: 70%
+    height: 100%
+    letter-spacing: 35px
+    padding: 1rem
+    margin: 10% 0% 5% 5% 
+    &__span
+        grid-area: 1 / 1 / 2 / 4
+        font-size: 2em
+        align-self: center
+        color: $blueLight
+        font-weight: 300
+        font-style: italic
+        text-transform: uppercase
+        padding: 1rem
+        opacity: .1
+        margin-top: 5%
+.grid-1 //SUPORT
+    grid-area: 3 / 1 / 4 / 2
+    .service-soporte
+        background-position: 50% 20%
+.grid-2 //armado de rig
+    grid-area: 3 / 2 / 4 / 3
+    .service-rig
+        background-position: 36%;   
+.grid-3  //HOUSING
+    grid-area: 3 / 3 / 4 / 4
+    .service-housing
+        background-position: 30%;
+        background-size: cover
+//GRID PARA HEADER DEL INDEX panel de valores
+.value-crypto
+ grid-area: 3 / 2 / 4 / 4;
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ grid-template-rows: repeat(12, 1fr);
+ grid-column-gap: 2px;
+ grid-row-gap: 2px;
+ background-color: $white;
+//////////////////////
+/// Distribucion de grid
+.crypto1  
+    grid-area: 1 / 1 / 9 / 6; 
+    background: red;
+.crypto2  
+    grid-area: 1 / 6 / 5 / 10; 
+    background: white;
+.crypto3  
+    grid-area: 1 / 10 / 5 / 13;
+    background: crimson;
+.crypto4  
+    grid-area: 5 / 6 / 9 / 13; 
+    background: orange;
+.crypto5  
+    grid-area: 9 / 1 / 13 / 5; 
+    background: cyan;
+.crypto6  
+    grid-area: 9 / 5 / 13 / 8; 
+    background: blue;
+.crypto7  
+    grid-area: 9 / 8 / 11 / 13; 
+    background: black; 
+.crypto8  
+    grid-area: 11 / 8 / 13 / 13;  
+    background: $violetM;
+//////////////////////////////
+
+////////Redes sociales
+.redesSociales
+    display: flex
+.tituloRs
+    grid-area: 1 / 1 / 2 / 2
+    font-weight: 300
+.redesSociales__ul
+    grid-area: 1 / 3 / 2 / 4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__li a
+        padding: 1rem
+.whatsapp, .correo, .support
+    display: flex
+    font-size: 1em
+    padding: .4rem
+    margin-left: 2rem
+

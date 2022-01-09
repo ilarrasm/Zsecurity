@@ -1,0 +1,94 @@
+///elementos verticales
+.elements-light-l
+    position: relative;
+    width: 100%;
+    &::before
+        content: "";
+        display: flex;
+        position: relative;
+        width: 80%;
+        height: 1px;
+        background: $wow;
+        filter: drop-shadow(0px 0px 1px $blue);
+        top: 40%;
+        left: 10%;
+.elements-light-r
+    position: relative;
+    height: 100%;
+    &::before
+        content: "";
+        display: flex;
+        position: absolute;
+        width: 3px;
+        height: 80vh;
+        background: $wow;
+        filter: drop-shadow(0px 0px 1px $blue);
+        top: 80%;
+        left: 30%;
+///ELEMENTOS HORIZONTALES
+.light-tron
+    color: $white;
+    &::after
+        content: "";
+        display: flex;
+        width: 75%;
+        height: .1rem;
+        background: $wow0;
+        position: relative;
+        top: 0;
+        left: 0;
+        filter: drop-shadow(0px 0px 10px);
+.light-tron-h
+    position: relative;
+    &::before
+        content: "";
+        display: flex;
+        width: 0%;
+        height: .1rem;
+        background: $wow0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: drop-shadow(0px 0px 10px);
+    &:hover::before
+        width: 100%;
+        transition: 2s;
+.light-tron-1
+    color: $white;
+    &::after
+        content: "";
+        display: flex;
+        width: 80%;
+        height: .1rem;
+        background: $wow0;
+        position: absolute;
+        bottom: -40%;
+        left: 10%;
+        filter: drop-shadow(0px 0px 10px);
+        align-self: center;
+.light-tron-select
+    color: $white;
+    &::before /////////ARRIBA
+        content: "";
+        display: flex;
+        width: 40%;
+        height: .1rem;
+        background: $wow;
+        position: relative;
+        top: 73%;
+        left: 5%;
+        filter: drop-shadow(0px 0px 2px $white);
+        border-radius: 50% 50% 50% 50%;
+    &::after
+        content: "";
+        display: flex;
+        width: 80%;
+        height: .1rem;
+        background: $wow;
+        position: relative;
+        top: 78%;
+        left: 5%;
+        filter: drop-shadow(0px 0px 6px $white);
+        border-radius: 50% 50% 50% 50%;
+#particles-js
+    width: 97vmax

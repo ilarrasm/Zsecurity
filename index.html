@@ -10,8 +10,8 @@
     <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
     <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
     <link rel="stylesheet" href="css/particle.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="shortcut icon" href="media/logo.ico">
     <title>Zod Security | Tecnología en su maxima expresión</title>
 </head>
@@ -23,6 +23,7 @@
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="index.html">HOME</a></li>
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#about">ABOUT US</a></li>
                 <li class="header__nav__menu__item"><a class="header__nav__menu__item__link" href="#contact">CONTACTANOS</a></li> 
+                <li class="header__nav__menu__item"><i class="fas fa-user header__nav__menu__item__link"></i></li> 
             </ul>
         </nav>
         <div class="topnav">
@@ -178,7 +179,7 @@
                 <summary class="detailsFaq__sumary details__sumary">¿Minar criptomonedas es rentable?</summary>
                 <section class="detailsFaq__content details__content">
                     <p>
-                        Seguramente escuchaste hablar de las grandes granjas de minería de bitcoins, que consisten en enormes datacenters cerca de centrales eléctricas o resguardados en el frío de Islandia. Esto hace que mucha gente piense que la minería de bitcoins ya es cosa de grandes empresas y es imposible participar. En parte esto es cierto; pero no porque sea imposible, sino porque la competencia es tan grande que resulta muy poco rentable invertir en el equipamiento necesario para minar bitcoins. Por ejemplo, Ethereum es considerada la segunda criptomoneda más utilizada después de Bitcoin, y es posible minarla a partir de una tarjeta gráfica y el software específico. Por otro lado también tenemos Monero, la cual se hizo muy popular por ser minada simplemente a través de un script que corre en un navegador; particularidad que aprovecharon muchos cibercriminales con nuevas técnicas como el criptojacking. Por último, una alternativa redituable son los pools de minería. Se trata de grupos de usuarios que se juntan con el objetivo de unir el poder de cómputo de todos los participantes y así tener mayores posibilidades de encontrar bloques válidos y ganar la recompensa, la cual luego dividen entre todos. Hay diferentes tipos de pools de minería, algunos más estables y otros más rentables, dependiendo del volumen de trabajo que maneje cada pool. ¡Aquí es donde Mundo Rig Trabaja! 
+                        Seguramente escuchaste hablar de las grandes granjas de minería de bitcoins, que consisten en enormes datacenters cerca de centrales eléctricas o resguardados en el frío de Islandia. Esto hace que mucha gente piense que la minería de bitcoins ya es cosa de grandes empresas y es imposible participar. En parte esto es cierto; pero no porque sea imposible, sino porque la competencia es tan grande que resulta muy poco rentable invertir en el equipamiento necesario para minar bitcoins. Por ejemplo, Ethereum es considerada la segunda criptomoneda más utilizada después de Bitcoin, y es posible minarla a partir de una tarjeta gráfica y el software específico. Por otro lado también tenemos Monero, la cual se hizo muy popular por ser minada simplemente a través de un script que corre en un navegador; particularidad que aprovecharon muchos cibercriminales con nuevas técnicas como el criptojacking. Por último, una alternativa redituable son los pools de minería. Se trata de grupos de usuarios que se juntan con el objetivo de unir el poder de cómputo de todos los participantes y así tener mayores posibilidades de encontrar bloques válidos y ganar la recompensa, la cual luego dividen entre todos. Hay diferentes tipos de pools de minería, algunos más estables y otros más rentables, dependiendo del volumen de trabajo que maneje cada pool.
                     </p>
                 </section>
             </details>
@@ -195,44 +196,13 @@
                 </section>
             </details>
         </article>
-        <article class="service-contact gridContact">
-                <h2 id="contact" class="tituloForm"> CONTACTANOS</h2>
-                <form class="formIndex" action="https://formspree.io/f/mpzkvrja" method="POST"> 
-                    <h3 class="DataContact">Datos de contacto</h3>     
-                    <div class="formName">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="name" placeholder="Nombre" alt="Nombre del contacto"/>
-                    </div>
-                    <div class="formEmail">
-                        <label for="email">Correo</label>
-                        <input type="email" name="email" id="email" placeholder="@Correo" alt="email del contacto"/>
-                    </div>
-                    <div class="formTel">
-                        <label for="telefono">Whatsapp</label>
-                        <input type="tel" name="telefono" id="phone" placeholder="011 1234-5678" alt="telefono del contacto"/>
-                    </div> 
-                    <div class="formService">
-                        <label for="service">¿Que estas buscando?</label>
-                        <select name="serv" id="serv">
-                            <option value="Arg">Housing</option>
-                            <option value="Uru">Venta de rig</option>
-                        </select> 
-                    </div>
-                    <div class="formUrl">
-                        <label  for="url">Red social/Web</label>
-                        <input type="url" name="url" placeholder="@Red social" alt="web del contacto"/>
-                    </div>
-                    <h3 class="consultaH3">Consulta</h3>
-                    <div class="formPresupuesto">
-                        <label for="presupuesto">Tu presupuesto</label>
-                        <input type="text" name="presupuesto" id="presupuesto" placeholder="Presupuesto - piso de 10.000 ARS">
-                    </div>
-                    <div class="formArea">
-                        <label for="area"> Por que queres invertir</label>
-                        <textarea name="area" id="area" cols="10" rows="5" placeholder="Cuentanos tus expectativas"></textarea>
-                    </div>
-                    <input type="submit" value="enviar" alt="enviar formulario"/>             
-                </form>
+        <article class="service-contact">
+                <section class="registrarse">
+                    <h2 id="contact" class="tituloReg">SUMATE A ZOD-SEC</h2>
+                    <span class="subReg">Trabajamos con las placas más potentes del mercado</span>
+                    <a class="btnReg">Registrarme</a>
+                    <span class="infoReg">Contamos con soporte las 24 horas</span>
+                </section>
                 <div class="infoContact">
                     <div class="redesSociales">
                         <h3 class="tituloRs">NUESTRAS REDES SOCIALES</h3>

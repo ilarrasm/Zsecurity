@@ -665,6 +665,10 @@ h1, h2, h3, h4 {
         opacity: 1;
         filter: drop-shadow(0 0 5px whitesmoke); }
 
+.fa-user {
+  color: whitesmoke;
+  align-self: center; }
+
 .topnav {
   display: none; }
 
@@ -699,12 +703,48 @@ h1, h2, h3, h4 {
   .infoContact__info p {
     font-size: 1em; }
 
-.divisoria-v {
-  content: "";
-  height: 100%;
-  width: 2px;
-  background: #181717;
-  margin: 1rem; }
+.service-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #181717; }
+
+.registrarse {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  background: url("../media/about/registrarme.svg");
+  background-size: 61%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat; }
+
+.tituloReg {
+  font-size: 5rem;
+  font-weight: 900;
+  font-style: italic; }
+
+.subReg {
+  color: #00A7CC;
+  font-size: 1.4rem; }
+
+.btnReg {
+  font-size: 3.3rem;
+  margin-top: 20%;
+  margin-bottom: 2%;
+  padding: 1rem;
+  background: #005366;
+  color: whitesmoke;
+  text-transform: uppercase;
+  border-radius: 10px;
+  align-self: flex-start;
+  user-select: none;
+  cursor: pointer; }
+  .btnReg:hover {
+    background: #00A7CC;
+    box-shadow: 0 0 5px #00A7CC; }
+
+.infoReg {
+  color: whitesmoke;
+  font-weight: 100; }
 
 .redesSociales {
   display: flex;
@@ -720,7 +760,7 @@ h1, h2, h3, h4 {
       font-size: .9em;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: space-between;
       text-decoration: none;
       color: #181717; }
 
@@ -734,7 +774,7 @@ h1, h2, h3, h4 {
   right: 1%;
   z-index: 0;
   opacity: .1;
-  color: black;
+  color: whitesmoke;
   text-align: right;
   z-index: 55;
   width: 60%;
@@ -833,7 +873,8 @@ h1, h2, h3, h4 {
   font-size: 2rem;
   align-self: center;
   justify-self: center;
-  padding: 1rem; }
+  padding: 1rem;
+  color: whitesmoke; }
   .fa-instagram-square:hover, .fa-facebook-f:hover, .fa-linkedin-in:hover, .fa-twitter:hover, .fa-twitch:hover {
     box-shadow: 0 0 5px #00A7CC;
     background: #181717;
@@ -1009,85 +1050,6 @@ h1, h2, h3, h4 {
 .crypto8 {
   grid-area: 11 / 8 / 13 / 13;
   background: #69046c; }
-
-.gridContact {
-  display: grid;
-  grid-template-columns: 5% repeat(5, 1fr) 5%;
-  grid-template-rows: repeat(12, 1fr);
-  background: #181717; }
-
-.tituloForm {
-  grid-area: 1 / 2 / 2 / 7;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 1; }
-
-.infoContact {
-  grid-area: 8 / 2 / 13 / 7;
-  background: blue;
-  height: 100%;
-  background: whitesmoke;
-  z-index: 1;
-  padding: 1rem; }
-
-.formBackground {
-  width: 100%;
-  height: 100%;
-  grid-area: 1 / 1 / 6 / 8;
-  background: #366be7;
-  z-index: 0; }
-
-.formIndex {
-  grid-area: 2 / 2 / 8 / 7;
-  display: grid;
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  width: 100%;
-  height: 100%;
-  padding: 3rem;
-  align-items: center;
-  background: whitesmoke;
-  border-radius: 5px;
-  justify-items: center;
-  z-index: 1; }
-
-.DataContact {
-  grid-area: 1 / 1 / 2 / 7;
-  color: #181717;
-  font-weight: 400;
-  font-size: 2em; }
-
-.consultaH3 {
-  grid-area: 1 / 7 / 2 / 13;
-  color: #181717;
-  font-size: 2em;
-  font-weight: 400; }
-
-.formName {
-  grid-area: 2 / 1 / 3 / 7; }
-
-.formEmail {
-  grid-area: 3 / 1 / 4 / 7; }
-
-.formTel {
-  grid-area: 4 / 1 / 5 / 7; }
-
-.formUrl {
-  grid-area: 5 / 1 / 6 / 7; }
-
-.formService {
-  grid-area: 2 / 7 / 3 / 13; }
-
-.formPresupuesto {
-  grid-area: 3 / 7 / 4 / 13; }
-
-.formArea {
-  grid-area: 4 / 7 / 6 / 13; }
-
-input[type=submit] {
-  grid-area: 6 / 1 / 7 / 13; }
 
 .redesSociales {
   display: flex; }

@@ -12,12 +12,44 @@
     &__info
         p
             font-size: 1em
-.divisoria-v
-    content: ""
-    height: 100%
-    width: 2px
-    background: $black
-    margin: 1rem
+.service-contact
+    display: flex
+    flex-direction: column
+    background-color: $black
+.registrarse
+    display: flex
+    flex-direction: column
+    padding: 10%
+    background: url("../media/about/registrarme.svg")
+    background-size: 61%
+    background-position: 100% 100%
+    background-repeat: no-repeat
+.tituloReg
+    font-size: 5rem
+    font-weight: 900
+    font-style: italic
+.subReg
+    color: $blueLight
+    font-size: 1.4rem
+.btnReg
+    font-size: 3.3rem
+    margin-top: 20%
+    margin-bottom: 2%
+    padding: 1rem
+    background: $blueViento
+    color: $white
+    text-transform: uppercase
+    border-radius: 10px
+    align-self: flex-start
+    user-select: none
+    cursor: pointer
+    &:hover
+        background: $blueLight
+        box-shadow: 0 0 5px $blueLight
+.infoReg
+    color: $white
+    font-weight: 100
+/////////////////////
 .redesSociales
     display: flex
     flex-direction: column
@@ -33,7 +65,7 @@
                 font-size: .9em
                 flex-direction: row
                 align-items: center
-                justify-content: flex-end
+                justify-content: space-between
                 text-decoration: none
                 color: $black
 .zodsecurity
@@ -46,7 +78,7 @@
     right: 1%
     z-index: 0
     opacity: .1
-    color: black
+    color: $white
     text-align: right
     z-index: 55
     width: 60%
@@ -134,6 +166,7 @@
     align-self: center
     justify-self: center
     padding: 1rem
+    color: $white
     &:hover
         box-shadow: 0 0 5px $blueLight
         background: $black

@@ -145,7 +145,7 @@ class Accordion {
     // Store the <summary> element
     this.summary = el.querySelector('.details__sumary');
     // Store the <div class="content"> element
-    this.content = el.querySelector('.details__content');
+    this.content = el.querySelector('.details__content p');
 
     // Store the animation object (so we can cancel it if needed)
     this.animation = null;

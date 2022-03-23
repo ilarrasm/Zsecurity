@@ -7,7 +7,7 @@
     display: flex
     flex-direction: column
 ////CRYPTO EACH CON MAPS PARA LOS ICONOS
-$crypto-icon: bitcoin, ethereum, ravencoin, shiba, etc, monero, ergo, lite
+$crypto-icon: bitcoin, ethereum, ravencoin, shiba, etc, monero, ergo, lite, zil, ton
 @each $name in $crypto-icon
  .icon-#{$name} 
     display: flex
@@ -17,28 +17,42 @@ $crypto-icon: bitcoin, ethereum, ravencoin, shiba, etc, monero, ergo, lite
     width: auto
     background-repeat: no-repeat
     background-size: 212%
+    height: 250px
+    width: 100%
+    .bk
+        display: flex
+        flex-direction: column
+        background: $blackRGBA03
+        user-select: none
+        height: 100%
     span
         display: flex
-        font-size: 2.7em
+        font-size: 1em
         text-align: left
         color: $white
         text-transform: uppercase
         font-weight: 600
-        width: 100%
-        height: 100%
-        padding: 1rem
-        background: $blackRGBA03
-        user-select: none
-        transition: .1s ease;  
+        transition: .1s ease  
     &:hover
         & > span
             background: $blackGradientO
             color: $wow1
             text-shadow: 0px 0px 15px
+    .nameCr
+        padding: 1rem
+    .cryptoValue
+        font-size: 1.5rem
+        width: 100%
+        justify-content: flex-end
+        padding: 1rem
+        opacity: .1
+    &:hover .cryptoValue
+        opacity: 1
+        transition: opacity 2s
 ///BUCLE PARA SERVICE-INDEX -CATEGORIAS
 @for $i from 1 through 3
     .grid-#{$i}
-        display: grid;
+        display: grid
         grid-template-columns: repeat(3, 1fr)
         grid-template-rows: 20% 65% 15%
         width: 90%

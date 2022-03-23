@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zod Security es una empresa dedicada a la seguridad de equipos de alto rendimiento enfocados en minar criptomonedas. Conoce mas de nuestros productos y servicios para pontenciar tu produccion."> 
     <meta name="keywords" content="cryptocurrencie, criptomonedas, cryptomonedas, crypto, rig, mineria, data center, data, center, energia, seguridad, inversion, bitcoin. lite, ethereum, monero, instalacion electrica, potente, rig, mineria, miner, gpu, amd, ati, intel, ryzen, i9, servidor, monedero">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/crypto.js"></script>
     <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.18.0.min.js"></script>
     <script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/1.0.0/eon.js"></script>
     <link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/1.0.0/eon.css"/>
@@ -72,7 +74,7 @@
                 <h3 class="soporte light-tron-h">Soporte 365</h3>
                 <p>
                     Tu rig esta protegido cada dia del año. Nuestro soporte remoto desde nuestro Data Center incluye 
-                    Monitero constante del rendimiento y la temperatura. 
+                    Monitoreo constante del rendimiento y la temperatura. 
                 </p>
                 <a href=""> +info</a>
             </section>
@@ -103,7 +105,7 @@
             </section>
             <section class="about__about">
                 <span class="about__about__tittles">
-                    <details class="about__about__tittles-h3 grid-one details">
+                    <!-- <details class="about__about__tittles-h3 grid-one details">
                         <summary class="details__sumary">
                             EQUIPO ESPECIALIZADO
                         </summary>
@@ -136,7 +138,7 @@
                                 zod-sec cuenta con uno de los data center más moderno de la región. Bajo rigurosos estandares y nuestro personal especializado garantizamos un potente rendimiento a bajo riesgo.
                             </p>
                         </span>
-                    </details>
+                    </details> -->
                     <span class="about__about__tittles-pic grid-five"></span>
                 </span>
             </section>
@@ -209,9 +211,9 @@
         <article class="service-contact">
                 <section class="registrarse">
                     <h2 id="contact" class="tituloReg">SUMATE A ZOD-SEC</h2>
-                    <span class="subReg">Trabajamos con las placas más potentes del mercado</span>
+                    <!-- <span class="subReg">Trabajamos con las placas más potentes del mercado</span> -->
                     <a class="btnReg">Registrarme</a>
-                    <span class="infoReg">Contamos con soporte las 24 horas</span>
+<!--                     <span class="infoReg">Contamos con soporte las 24 horas</span> -->
                 </section>
                 <div class="infoContact">
                     <div class="redesSociales">
@@ -234,20 +236,72 @@
         </article>
         <article class="crypto">
             <section class="grid-icons">
-                <div class="icon-bitcoin"><span class="light-tron-h">bitcoin</span></div>
-                <div class="icon-ethereum"><span class="light-tron-h">ethereum</span></div>
-                <div class="icon-etc"><span class="light-tron-h">ethereum classic</span></div>
-                <div class="icon-shiba"><span class="light-tron-h">shiba</span></span></div>
-                <div class="icon-monero"><span class="light-tron-h">monero</span></div>
-                <div class="icon-ergo"><span class="light-tron-h">ergo</span></div>
-                <div class="icon-ravencoin"><span class="light-tron-h">ravencoin</span></div>
-                <div class="icon-lite"><span class="light-tron-h">litecoin</span></div>                
+                <div class="icon-bitcoin">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">bitcoin</span> 
+                        <span id="BTC" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-ethereum">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">ethereum</span> 
+                        <span id="ETH" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-etc">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">ethereum classic</span>
+                        <span id="ETC" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-shiba">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">shiba</span>
+                        <span id="SHIB" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-monero">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">monero</span>
+                        <span id="XMR" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-ergo">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">ergo</span>
+                        <span id="ERG"  class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-ravencoin">
+                    <span class="light-tron-h bk">
+                        <span class="nameCr">Ravencoin</span>
+                        <span id="RVN" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-lite">
+                    <span class="light-tron-h bk"> 
+                        <span class="nameCr">LiteCoin</span>
+                        <span id="LTC" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-zil">
+                    <span class="light-tron-h bk"> 
+                        <span class="nameCr">Zilliqa</span>
+                        <span id="ZIL" class="cryptoValue"></span>
+                    </span>
+                </div>
+                <div class="icon-ton">
+                    <span class="light-tron-h bk"> 
+                        <span class="nameCr">TonCoin</span>
+                        <span id="TONCOIN" class="cryptoValue"></span>
+                    </span>
+                </div>                                 
             </section> 
             <h3 class="tituloH3Crypto flex-column">Monedas soportadas</h3>
         </article>
     </footer>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <script src="js/particlesjs/particles.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./js/particlesjs/particles.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>

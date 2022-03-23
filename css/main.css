@@ -22,24 +22,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-bitcoin .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-bitcoin span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-bitcoin:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-bitcoin .nameCr {
+    padding: 1rem; }
+  .icon-bitcoin .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-bitcoin:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-ethereum {
   display: flex;
@@ -48,24 +62,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-ethereum .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-ethereum span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-ethereum:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-ethereum .nameCr {
+    padding: 1rem; }
+  .icon-ethereum .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-ethereum:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-ravencoin {
   display: flex;
@@ -74,24 +102,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-ravencoin .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-ravencoin span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-ravencoin:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-ravencoin .nameCr {
+    padding: 1rem; }
+  .icon-ravencoin .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-ravencoin:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-shiba {
   display: flex;
@@ -100,24 +142,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-shiba .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-shiba span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-shiba:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-shiba .nameCr {
+    padding: 1rem; }
+  .icon-shiba .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-shiba:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-etc {
   display: flex;
@@ -126,24 +182,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-etc .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-etc span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-etc:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-etc .nameCr {
+    padding: 1rem; }
+  .icon-etc .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-etc:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-monero {
   display: flex;
@@ -152,24 +222,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-monero .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-monero span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-monero:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-monero .nameCr {
+    padding: 1rem; }
+  .icon-monero .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-monero:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-ergo {
   display: flex;
@@ -178,24 +262,38 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-ergo .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-ergo span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-ergo:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-ergo .nameCr {
+    padding: 1rem; }
+  .icon-ergo .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-ergo:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .icon-lite {
   display: flex;
@@ -204,24 +302,118 @@
   height: auto;
   width: auto;
   background-repeat: no-repeat;
-  background-size: 212%; }
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-lite .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
   .icon-lite span {
     display: flex;
-    font-size: 2.7em;
+    font-size: 1em;
     text-align: left;
     color: whitesmoke;
     text-transform: uppercase;
     font-weight: 600;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    user-select: none;
     transition: .1s ease; }
   .icon-lite:hover > span {
     background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
     color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
     text-shadow: 0px 0px 15px; }
+  .icon-lite .nameCr {
+    padding: 1rem; }
+  .icon-lite .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-lite:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
+
+.icon-zil {
+  display: flex;
+  flex-direction: column-reverse;
+  background: url(../media/ico/zil.svg);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-zil .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
+  .icon-zil span {
+    display: flex;
+    font-size: 1em;
+    text-align: left;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .1s ease; }
+  .icon-zil:hover > span {
+    background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
+    color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
+    text-shadow: 0px 0px 15px; }
+  .icon-zil .nameCr {
+    padding: 1rem; }
+  .icon-zil .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-zil:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
+
+.icon-ton {
+  display: flex;
+  flex-direction: column-reverse;
+  background: url(../media/ico/ton.svg);
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: 212%;
+  height: 250px;
+  width: 100%; }
+  .icon-ton .bk {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    user-select: none;
+    height: 100%; }
+  .icon-ton span {
+    display: flex;
+    font-size: 1em;
+    text-align: left;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .1s ease; }
+  .icon-ton:hover > span {
+    background: linear-gradient(0deg, rgba(23, 23, 23, 0.2) 0%, rgba(23, 23, 23, 0.9) 100%);
+    color: linear-gradient(60deg, rgba(27, 55, 118, 0.9) 30%, rgba(57, 100, 148, 0.5) 100%);
+    text-shadow: 0px 0px 15px; }
+  .icon-ton .nameCr {
+    padding: 1rem; }
+  .icon-ton .cryptoValue {
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: .1; }
+  .icon-ton:hover .cryptoValue {
+    opacity: 1;
+    transition: opacity 2s; }
 
 .grid-1 {
   display: grid;
@@ -931,7 +1123,7 @@ h1, h2, h3, h4 {
   grid-area: 1 / 2 / 2 / 5; }
 
 .header__logo {
-  grid-area: 1 / 1 / 2 / 3;
+  grid-area: 1 / 1 / 2 / 4;
   color: whitesmoke;
   text-transform: uppercase;
   font-size: 3.3em;
@@ -972,7 +1164,7 @@ h1, h2, h3, h4 {
 
 .grid-icons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
 .icon-bitcoin {
@@ -1009,6 +1201,16 @@ h1, h2, h3, h4 {
 .icon-lite {
   grid-area: 2 / 4 / 3 / 5;
   background-position: 50% 50%; }
+
+.icon-zil {
+  grid-area: 1 / 5 / 2 / 6;
+  background-position: 50% 50%;
+  background-size: cover; }
+
+.icon-ton {
+  grid-area: 2 / 5 / 3 / 6;
+  background-position: 50% 50%;
+  background-size: 90%; }
 
 .service {
   background: #181717;
@@ -1440,6 +1642,10 @@ select {
     font-size: 1.7em; }
   .icon-lite span {
     font-size: 1.7em; }
+  .icon-zil span {
+    font-size: 1.7em; }
+  .icon-ton span {
+    font-size: 1.7em; }
   .grid-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1469,6 +1675,10 @@ select {
     font-size: 1.7em; }
   .icon-lite span {
     font-size: 1.7em; }
+  .icon-zil span {
+    font-size: 1.7em; }
+  .icon-ton span {
+    font-size: 1.7em; }
   .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1497,6 +1707,10 @@ select {
   .icon-ergo span {
     font-size: 1.7em; }
   .icon-lite span {
+    font-size: 1.7em; }
+  .icon-zil span {
+    font-size: 1.7em; }
+  .icon-ton span {
     font-size: 1.7em; }
   .divisoria-v {
     display: none; }
@@ -1883,6 +2097,8 @@ select {
     height: 36vh; }
   .header__nav {
     display: none; }
+  .header__logo {
+    font-size: 1.6rem; }
   .topnav {
     display: flex;
     grid-area: 1 / 1 / 5 / 5;
@@ -1961,9 +2177,7 @@ select {
     z-index: 1; }
   .infoContact {
     grid-area: 8 / 1 / 13 / 2;
-    background: blue;
     height: 50%;
-    background: whitesmoke;
     z-index: 1;
     padding: 0rem; }
   .formIndex {
@@ -1986,4 +2200,10 @@ select {
   .correox {
     font-size: 1rem; }
   .divisoria-v {
-    display: none; } }
+    display: none; }
+  .crypto {
+    display: flex;
+    flex-direction: column-reverse; }
+  .grid-icons {
+    display: flex;
+    flex-direction: column; } }

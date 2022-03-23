@@ -8,7 +8,7 @@
         font-size: 2rem
     @for $i from 1 through 3
         .grid-#{$i}
-            display: grid;
+            display: grid
             grid-template-columns: repeat(3, 1fr)
             grid-template-rows: 20% 65% 15%
             width: 90%
@@ -319,6 +319,8 @@
         height: 36vh
     .header__nav
         display: none
+    .header__logo
+        font-size: 1.6rem
     .topnav 
         display: flex
         grid-area: 1 / 1 / 5 / 5
@@ -401,9 +403,7 @@
         z-index: 1
     .infoContact
         grid-area: 8 / 1 / 13 / 2
-        background: blue
         height: 50%   
-        background: $white
         z-index: 1
         padding: 0rem
     .formIndex
@@ -428,3 +428,9 @@
         font-size: 1rem
     .divisoria-v
         display: none
+    .crypto
+        display: flex
+        flex-direction: column-reverse
+    .grid-icons
+        display: flex
+        flex-direction: column
